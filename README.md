@@ -1,2 +1,3 @@
-# FIAPSistemasParaInternet
-This repository ows the codes used during Sistemas para Internet course at FIAP
+# FIAP - Sistemas para Internet
+<br>
+Repositório criado para compartilhar a códificação usada nas aulas
