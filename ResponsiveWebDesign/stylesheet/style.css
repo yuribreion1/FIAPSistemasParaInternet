@@ -28,3 +28,7 @@ img {
     display: block;
     padding: 2em;
 }
+
+dt ,dd{
+    padding: 0.5em;
+}
