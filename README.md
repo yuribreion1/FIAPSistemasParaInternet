@@ -4,3 +4,9 @@
 Repositório criado para compartilhar a códificação usada nas aulas
 
 [![N|Solid](https://media.lovemondays.com.br/logos/39417d/faculdade-de-informatica-e-administracao-paulista-fiap-original.jpg)](https://nodesource.com/products/nsolid)
+
+## Primeiro ano:
+
+- Pensamento Computacional e Application Server
+
+- Driven Domain Application
