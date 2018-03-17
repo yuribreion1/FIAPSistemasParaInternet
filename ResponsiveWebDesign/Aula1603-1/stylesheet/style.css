@@ -1,0 +1,87 @@
+body {
+    font-family: Verdana, Arial;
+    font-size: 14px;
+    color: #000;
+    background-image: url('../img/fundoTelaA.jpg');
+    background-attachment: fixed;
+    /*Fixar imagem unica na tela*/
+    background-size: cover;
+    /*Aplicar imagem fixa independente do zoom*/
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial;
+    color: red;
+}
+
+h1 {
+    border-bottom: 2px solid #FFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d2c386;
+}
+
+h3 {
+    border-bottom: 1px solid #FFF;
+    padding: 0.5em;
+    display: inline-block; /*Aplicar o comprimento da borda baseado no tamanho do texto*/
+    margin: 20px 20px 20px 0px;
+}
+
+table, td{
+    border: none;
+}
+
+#container {
+    width: 900px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    /*Centralizar o conteudo na pagina*/
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /*Aplicando transparencia de 0.7*/
+    color: gray;
+}
+
+#banner {
+    width: 100%;
+    /*Aplicando 100% se baseando na classe pai que é o container*/
+    border: 5px solid #FFF;
+    border-radius: 0px 20px 0px 20px;
+    /*Aplicando bordas arredondadas em só duas pontas*/
+}
+
+hr {
+    display: none;
+    /*Ocultar item*/
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 20px 0 20px 0;
+    /*Aplicando margem em cima e em baixo*/
+}
+
+p i {
+    font-weight: bold;
+    color: pink;
+    font-size: 16px;
+    border-bottom: 1px solid pink;
+}
+
+table img {
+    border-radius: 10%;
+    border: 0.5em solid #FFF;
+    margin: 10px;
+}
+
+table img:hover {
+    border: 0.5em solid red;
+    border-radius: 50%;
+    transition: 1s;
+}

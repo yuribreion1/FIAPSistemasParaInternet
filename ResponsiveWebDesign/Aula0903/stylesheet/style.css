@@ -1,0 +1,63 @@
+html {
+    font-family: tahoma;
+    font-size: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none
+}
+
+blockquote {
+    content: '"';
+    text-align: center;
+    margin: 2em;
+    padding: 2%;
+    background-color: dodgerblue;
+    width: 30%;
+    border-radius: 50%;
+    font-family: 'Slabo 27px', serif;
+    box-sizing: border-box
+}
+
+li {
+    padding: 5px;
+}
+
+img {
+    margin: auto;
+    display: block;
+    padding: 2em;
+}
+
+dt ,dd{
+    padding: 0.5em;
+}
+div {
+    width: 400px;
+    height: 300px;
+    background: url('../img/fundoTelaA.jpg');
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+div p{
+    width: 350px;
+    height: 30px;
+    background: #000;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font:bold 30px/28px verdana, arial, sans-serif;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px;
+}
+
+.div-cores1 p{
+    opacity: 0.3;
+}
+
+.div-cores2 {
+    background:rgba(0, 0, 0, 0.5);
+}
