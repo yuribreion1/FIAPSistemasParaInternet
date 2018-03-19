@@ -1,0 +1,14 @@
+Crie o diagrama de classe para o case abaixo:
+
+Uma bilheteria da empresa XPTO de aviação, responsável por vender passagens aéreas nacionais, iniciou um processo de informatização através da implantação de um banco de dados. Foi atribuído a você o papel de elaborar o diagrama de classes com base no levantamento de requisitos que trouxe as seguintes informações:
+A bilheteria aceitará pagamentos em dinheiro, cartão de crédito e débito, sendo que o cliente poderá pagar uma passagem com mais de uma forma de pagamento.
+O passageiro possuirá somente um endereço cadastrado junto ao seu registro (independente de possuir mais de um endereço), formado pelo CEP, número da residencia e complemento, além dos dados comuns de cadastro. A empresa atende clientes pessoas físicas e jurídicas.
+Os voos podem possuir nenhuma ou muitas escalas, é importante definir quais escalas o voo possui e o tempo de duração de cada escala.
+Também é importante definir para a passagem a classe pertencente a passagem, que pode ser econômica, promocional ou vip.
+Cada passagem deve pertencer somente a um passageiro, defina por conta própria os atributos comuns em uma passagem aérea.
+Não há necessidade de se cadastrar dados dos funcionários.
+Sobre os passageiros serão armazenados os dados básicos como nome, data de nascimento, endereço, cpf e telefone.
+O voo sai todos os dias alterando apenas a data entre um voo e outro. Mas a bilheteria venderá passagens para vários voos.
+Muito cuidado ao distribuir os dados pois é importante não atribuir dados do voo para passagens e vice-versa.
+A empresa necessita de um controle dos fornecedores, uma vez que a mesma adquire bobinas para as impressoras, empresas terceirizadas para serviços como segurança, contabilidade e manutençao dos equipamentos. Por isso é importante armazenar dos fornecedores além dos dados comuns, se é fornecedor de serviço ou produto e qual o segmento.Também será necessário um contato.
+Como a empresa trabalha com clientes de todo o mundo, é importante que o telefone tenha o DDI, DDD, número e eventualmente ramal.

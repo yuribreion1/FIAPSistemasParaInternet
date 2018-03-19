@@ -1,0 +1,34 @@
+Monte as entidades com seus respectivos atributos e métodos, e quando for necessário utilize os conceitos de composição e herança.
+
+Descanso 1
+Estudo de Caso:  SCA – Sistema de Controle de Associados da Academia VamosTreinar
+A empresa de ginástica VamosTreinar necessita desenvolver um sistema de controle de seu associados, professores e aulas realizadas.
+Quando um aluno dirige-se a academia para fazer a matrícula, ele preenche um formulário contendo os seguintes dados:  Nome Completo, Endereço Completo com cep, data de nascimento, email, telefone, sexo, rg, cpf, idade, instituição (caso pertença a uma instituição que o beneficie de desconto). Precisamos também da data de matrícula do aluno.
+Um aluno pode fazer vários tipos de aulas em horários diferentes. 
+Os tipos de aulas são as modalidades oferecidas pela academia (Musculação, Alongamento, BodyPump, Aiki-Do, Natação). 	
+Nossa academia procura oferecer novas modalidades aos seus usuários, oferecendo o que há de mais moderno, em função disto algumas modalidades vão sendo substituídas ao longo do tempo. 	
+A instituição são as empresas conveniadas, onde serão praticados descontos provenientes do convênio.
+Para abertura de um convênio precisamos das seguintes informações: razão social da empresa conveniada, CNPJ, endereço completo, telefone, email, url, contato, quantidade de funcionários e o percentual de desconto.
+O percentual de desconto é baseado na quantidade de funcionários que a empresa conveniada tem, que poderão se tornar usuários de nossa academia.
+As aulas são identificadas por um número seqüencial, e são caracterizadas pela modalidade, pelo nível de dificuldade, professor, sala e horário de início e tempo de duração.
+Nossa academia possui salas especializadas para a realização das aulas e normalmente caracterizamos as salas a partir de número sequencial, andar, capacidade e observações referentes aos equipamentos disponíveis em cada sala.
+Atualmente nossa academia funciona em um prédio de 10 andares.
+Os professores são identificados pelo número de matrícula, nome e apelido, sexo, data de nascimento, CPF, RG, endereço completo com cep e telefone, email e ainda sobre eles são identificadas as modalidades em que eles estão aptos a dar aula.	
+Após o pagamento da matrícula e do exame médico o aluno passará pelo exame com um médico, que irá coletar as seguintes informações: Pressão, Batimento Cardíaco, Peso e Altura. Além disso existe um campo Observação onde são descritas doenças pré-existentes ou qualquer anormalidade caso existam.
+Os exames médicos tem validade de 3 meses, portanto deverão ser renovados pelos nossos alunos.
+Normalmente enviamos e-mails, sms e/ou fazemos contatos telefônicos, avisando sobre o vencimento do exame médico.
+	
+Descanso 2
+PROJETO: SIP (SISTEMA DE CONTROLE DE IMPLANTAÇÃO DE PROJETOS)
+Um funcionário possui apenas um endereço residencial. 
+Um funcionário pode ter um ou mais dependentes (filhos, esposa ou marido).
+Um funcionário possui apenas uma data de admissão.
+Um funcionário deve pertencer a um único departamento.
+Um funcionário possui um único número de matrícula.
+Um funcionário pode participar da implantação de um ou mais projetos.
+Um departamento pode locar vários funcionários.
+Um projeto pode ser implantado por vários funcionários.
+Cada dependente deve ter uma data de nascimento.
+Cada dependente pertence a um único funcionário.
+Um funcionário pode participar da implantação de um mesmo projeto várias vezes, ou seja, um funcionário pode participar da implantação de um projeto em diferentes momentos da implantação.
+Não será considerada a hipótese de termos um casal trabalhando na mesma empresa (teriam dependentes comuns).
