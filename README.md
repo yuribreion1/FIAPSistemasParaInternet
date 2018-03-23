@@ -7,6 +7,20 @@ Repositório criado para compartilhar a códificação usada nas aulas
 
 ## Primeiro ano:
 
-- Pensamento Computacional e Application Server
+- Pensamento Computacional e Application Server - Renato Bortolin Boschini
 
-- Driven Domain Application
+- Driven Domain Application - Humberto Delgado de Sousa
+
+- Design de Software - Allen Fernando Oberleitner Lima
+
+- Estratégia e Implementação de Estrutura de Dados - Andre Luis Pereira dos Santos
+
+- Formação Social e Sustentabilidade(EAD) - Ana Claudia Moreira Madaleno
+
+- Gestão de Projetos(EAD) - Allen Fernando Oberleitner Lima
+
+- Gestão de Negócios para Web Site - Fernando Augusto Martins Junior
+
+- Network Architecture - João Gilberto Pinho
+
+- User Experience and Toolkit Images - Thais Campas

@@ -32,8 +32,9 @@ h3 {
     margin: 20px 20px 20px 0px;
 }
 
+
 table, td{
-    border: none;
+    border: none; /* Tirar bordas padrão das tabelas e colunas */
 }
 
 #container {
@@ -84,4 +85,29 @@ table img:hover {
     border: 0.5em solid red;
     border-radius: 50%;
     transition: 1s;
+}
+
+ul, ol {
+    border: 3px solid gray;
+    background-color: #000;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 0 1em 0 1em;
+}
+
+li {
+    padding: 0.5em;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(158, 39, 39);
+    border: 0.1em solid whitesmoke;
+    padding: 0.5em;
+    transition: 200ms;
+    box-sizing: border-box;
 }
