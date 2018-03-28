@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    display: none;
+}
+
+body {
+    background: #333;
+    font-family: Tahoma, Arial;
+    font-size: 1em;
+    width: 800px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 2em;
+}
+    
+.lista {
+    margin: .2em 0 .2em 0;
+    float: right;
+    padding: 2em;
+    box-sizing: border-box;
+
+}
+
+.lista ul li {
+    list-style: none;
+    display: inline;   
+}
+
+.lista ul li a {
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.lista a:hover {
+    background: orange;
+    color: black;
+    border-radius: 10%;
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    border: .1em solid grey;
+    background: #eee;
+    height: 15em;
+}
+
+.banner img {
+    float: right;
+    margin-top: 1.2em;
+}
+
+.banner h2 , .banner p{
+    margin-left: 1em;
+}
+
+
+
+h1 {
+    color: orange;
+    margin: 1em 0 0 1em;
+    font-size: 3em;
+}
+
+.barra {
+    display: block;
+    height: 1em;
+    background: orange;
+}
+
+.produto h2 {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.produto .caixa {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    background: white;
+    float: left;
+    margin: 5px;
+}
