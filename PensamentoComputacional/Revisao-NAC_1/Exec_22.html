@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 22</title>
+
+  <script>
+    // Gabriella Fernandes Boschini
+    // RM12389	
+
+	//22) 22) Uma empresa tem para um determinado funcionário uma ficha contendo o nome, número de horas trabalhadas e o número de dependentes de um funcionário. Considerando que a empresa paga R$ 98,00 por hora e 80 reais por dependentes.
+
+
+
+
+
+var nome = prompt("Nome do funcionário");
+var horas = parseInt(prompt("A quantidade de horas trabalhadas no mês."));
+var dependentes = parseInt(prompt("A quantidade de dependentes do funcionário."));
+	
+
+
+	if( nome=='' || isNaN(horas) || isNaN(dependentes)  ){
+		document.write("Algum número é inválido...pressione F5");	
+	}else{
+
+		var valorHora = 98;
+		var salarioBruto = valorHora * horas;
+
+		var inss = salarioBruto * 8.5/100;
+		var ir = salarioBruto * 5/100;
+		
+
+		var SalarioFinal = (salarioBruto-inss-ir)
+
+		document.write('Nome do funcionário: ' + nome + '<br>');
+		document.write('Salário bruto (sem descontos): R$ ' + salarioBruto + '<br>');
+		document.write('Desconto de IR: R$ ' + ir + '<br>');
+		document.write('Desconto de INSS: R$ ' + inss + '<br>');
+		document.write('Salário Final: R$ ' + SalarioFinal + '<br>'); 
+		document.write('<hr>');
+		
+		
+
+
+	}
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

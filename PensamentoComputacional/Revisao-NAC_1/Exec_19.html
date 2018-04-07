@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 19</title>
+
+  <script>
+    // Gabriella Fernandes Boschini
+    // RM12389	
+
+  //19) Uma loja de roupas pagará a seus vendedores um salário de R$ 1000,00 por mês mais uma comissão de R$ 25,00 para cada calça vendida. Sabendo que o valor de uma calça é de 100,00, elabore um script para calcular e exibir o salário do vendedor em um determinado mês para isso solicite: o nome do vendedor e o número de calças vendidas. Exiba na tela todas as informações obtidas e calculadas.
+
+//Pedindo os valores ao usuário
+var salario = 1000;
+var comissao = 25;
+var valorCalca = 100;
+
+console.log(typeof comissao)
+
+
+var nome = (prompt("Digite o nome do vendedor"));
+var qtd = parseFloat(prompt("Número de calças vendidas: "));
+	
+
+	if(nome=='' || isNaN(qtd) ){
+		document.write("Algum número é inválido...pressione F5");	
+	}else{
+
+		document.write ('19) Uma loja de roupas pagará a seus vendedores um salário de R$ 1000,00 por mês mais uma comissão de R$ 25,00 para cada calça vendida. Sabendo que o valor de uma calça é de 100,00, elabore um script para calcular e exibir o salário do vendedor em um determinado mês para isso solicite: o nome do vendedor e o número de calças vendidas. Exiba na tela todas as informações obtidas e calculadas. <hr>');
+		
+		document.write('Nome do vendedor: ' + nome + '<br>');
+		document.write('Salário sem comissão: R$ ' + salario + '<br>');
+		document.write('Preço da calça: R$ ' + valorCalca + '<br>');
+		document.write('Número de calças vendias:' + qtd + '<br>');
+		document.write('Comissão: R$ ' + comissao * qtd + '<br>');
+		document.write('_______________________________'+ '<br>' );
+		document.write('Total: R$ ' + (salario + (comissao * qtd) ) );
+
+		
+
+	}
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

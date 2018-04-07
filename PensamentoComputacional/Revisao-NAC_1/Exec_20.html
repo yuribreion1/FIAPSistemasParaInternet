@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 20</title>
+
+  <script>
+    // Gabriella Fernandes Boschini
+    // RM12389	
+
+	//20) Faça um script que solicite ao usuário as seguintes informações de um funcionário: Nome, idade cargo e o seu salário bruto. Após isso calcule:
+	// a) Salário Bruto - O salário bruto teve um reajuste de 38%.
+	// b) Bônus - O funcionário receberá uma gratificação de 20% sobre o salário bruto.
+	// c) Descontos - Do salário bruto total é descontado 15%.
+	// Exiba na tela: Nome, idade e cargo, salário bruto, o valor do bônus, o valor do desconto e o salário final.
+
+
+
+
+var nome = prompt("Digite o nome do funcionário");
+var idade = parseInt(prompt("Digite a idade do funcionario"));
+var cargo = prompt("Digite o cargo do funcionario");	
+var salBruto = parseFloat(prompt("Digite o salário bruto do funcionario")) ;
+
+console.log(typeof salBruto);
+
+	if( nome=='' || isNaN(idade) || cargo=='' || isNaN(salBruto)  ){
+		document.write("Algum número é inválido...pressione F5");	
+	}else{
+
+		document.write('Funcionário: ' + nome + '<br>');
+		document.write('Idade: ' + idade + 'anos <br>');
+		document.write('Cargo: ' + cargo + '<br>');
+		document.write('Salário Bruto: R$' + salBruto + '<br>');
+		document.write('<hr>');
+		
+		var salBrutoAjuste = salBruto*38/100;
+		document.write('Reajuste de 38%: R$ ' + parseInt(salBrutoAjuste)) ;
+		document.write('<hr>');
+		
+		var salBrutoBonus = salBruto*20/100;
+		document.write('Bônus de 20%: R$ ' + parseInt(salBrutoBonus));
+		document.write('<hr>');
+		
+		var salBrutoDesconto = salBruto*15/100;
+		document.write('Desconto de 15%: R$ ' + parseInt(salBrutoDesconto));
+		document.write('<hr>');
+
+		var salarioFinal = (salBruto + salBrutoAjuste + salBrutoBonus) - salBrutoDesconto ;
+		document.write('Salário Final: R$ ' + parseInt(salarioFinal));
+		document.write('<hr>');
+
+
+	}
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

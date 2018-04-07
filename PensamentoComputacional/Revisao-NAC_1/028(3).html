@@ -1,0 +1,36 @@
+<meta charset="utf-8" />
+<script type="text/javascript">
+//Pedir 03 números ao usuário e mostrar o maior digitado
+
+//Pedindo os valores ao usuário
+var n1 = parseFloat(prompt("Digite um número qualquer: "));
+var n2 = parseFloat(prompt("Digite um número qualquer: "));
+var n3 = parseFloat(prompt("Digite um número qualquer: "));
+
+//antes de tudo vou verificar se ele digitou apenas números
+//o método isNaN = verificar se algo SE NÃO É UM NÚMERO
+
+	if(isNaN(n1) || isNaN(n2) || isNaN(n3)){
+	document.write("Algum número é inválido...pressione F5");	
+	}
+
+	else{
+			//antes de verificar quem é o maior, vou verificar se são iguais
+				if((n1 == n2) && (n2 == n3)){
+				document.write("Os números digitados são iguais!!!");	
+				}
+				else{
+					//verificar quem é o maior e vou exibir na tela
+						if((n1 >=n2) && (n1 >= n3)){
+							document.write(n1 + " foi o maior número digitado!!!");
+						}
+						else if((n2>=n1) && (n2 >= n3)){
+							document.write(n2 + " foi o maior número digitado!!!");
+						}
+						else{
+							document.write(n3 + " foi o maior número digitado!!!");
+						}
+					}
+	}
+</script>
+
