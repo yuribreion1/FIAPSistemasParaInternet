@@ -16,7 +16,18 @@ public class Aluno {
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		
+		if (nome.equalsIgnoreCase("churros")) {
+			nome = "NOME INVALIDO";
+		}
+		
+		//Restricao para nao fazer o banco derrubar a aplicacao
+		if (nome.length() > 40) {
+			//Pegando somente os 40 primeiros registros
+			nome = nome.substring(0, 40);
+		} else {
+			this.nome = nome.toUpperCase();
+		}
 	}
 
 	public int getRm() {
@@ -77,17 +88,57 @@ public class Aluno {
 
 	public Aluno(String nome, int rm, double ps, double am, double nac, int faltas, Curso curso, Endereco endereco) {
 		super();
-		this.nome = nome;
-		this.rm = rm;
-		this.ps = ps;
-		this.am = am;
-		this.nac = nac;
-		this.faltas = faltas;
-		this.curso = curso;
-		this.endereco = endereco;
+		setNome(nome);
+		setRm(rm);
+		setPs(ps);
+		setNac(nac);
+		setAm(am);
+		setFaltas(faltas);
+		setCurso(curso);
+		setEndereco(endereco);
 	}
 
 	public Aluno() {
 		super();
 	}
+	
+	public String getPrimeiroNome() {
+		//Tratamento para ter certeza que ha espaco
+		if (nome.indexOf(" ") >= 0) {
+			//Tratamento para contar a primeira posicao ate o primeiro espaco
+			return nome.substring(0, nome.indexOf(" "));
+		} else {
+			return null;
+		}
+		
+	}
+	
+	public String getSobreNome() {
+		if (nome.indexOf(" ") >= 0) {
+			//Pegando a proxima posicao depois do espaco
+			return nome.substring(nome.indexOf(" ") + 1, nome.length()); 
+		} else {
+			return nome;
+		}
+	}
+
+	public double getMedia() {
+		return ((ps * .50) + (am * .30) + (nac * .20));
+	}
+	
+	public String getStatus() {
+		if(getFaltas() < 40) { 
+			//Criando variavel para melhorar performance
+			double media = getMedia();
+			if (media >= 6) {
+				return "Aprovado";
+			} else if (media < 4) { 
+			return "Reprovado";
+		}
+		return "Exame";
+		} else {
+			return "Reprovado por falta";
+		}
+		
+		}
 }

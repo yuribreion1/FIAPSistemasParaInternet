@@ -12,10 +12,10 @@ public class Curso {
 
 	public Curso(String descricao, double valor, int duracao, String titulacao) {
 		super();
-		this.descricao = descricao;
-		this.valor = valor;
-		this.duracao = duracao;
-		this.titulacao = titulacao;
+		setDescricao(descricao);
+		setValor(valor);
+		setDuracao(duracao);
+		setTitulacao(titulacao);
 	}
 
 	public String getDescricao() {

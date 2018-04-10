@@ -31,10 +31,10 @@ public class Endereco {
 	}
 	public Endereco(String logradouro, String numero, String cep, String bairro) {
 		super();
-		this.logradouro = logradouro;
-		this.numero = numero;
-		this.cep = cep;
-		this.bairro = bairro;
+		setLogradouro(logradouro);
+		setNumero(numero);
+		setCep(cep);
+		setBairro(bairro);
 	}
 	public Endereco() {
 		super();

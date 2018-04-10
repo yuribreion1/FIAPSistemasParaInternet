@@ -7,6 +7,9 @@ import br.fiap.com.view.Magica;
 
 public class TesteAluno {
 	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		Aluno a = new Aluno();
@@ -18,8 +21,10 @@ public class TesteAluno {
 		a.setRm(Magica.inteiro("RM"));
 		a.setPs(Magica.decimal("Digite a PS"));
 		a.setAm(Magica.decimal("Digite a AM"));
+		a.setNac(Magica.decimal("Digite a NAC"));
 		a.setFaltas(Magica.inteiro("Faltas"));
 		
+		/*
 		//Atribuindo curso a aluno
 		a.setCurso(c);
 		
@@ -37,6 +42,13 @@ public class TesteAluno {
 		e.setCep(Magica.texto("CEP"));
 		e.setLogradouro(Magica.texto("Logradouro"));
 		e.setNumero(Magica.texto("Numero"));
+		*/
+		
+		System.out.println("Nome: " + a.getPrimeiroNome());
+		System.out.println("Sobrenome: " + a.getSobreNome());
+		//System.out.println("Sua media semestral e: " + a.getMedia());
+		System.out.println(a.getStatus());
+
 	
 	}
 }
