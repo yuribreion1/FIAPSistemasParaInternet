@@ -1,0 +1,104 @@
+body {
+    background-color: #ccc;
+}
+
+#container {
+    border: 1px solid red;
+    width: 800px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.imagem {
+    background-image: url('../img/imagens.png');
+    background-repeat: no-repeat;
+}
+
+.caixa {
+    width: 120px;
+    height: 150px;
+    float: left;
+}
+
+.menu {
+    background-color: #666;
+    height: 150px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    margin: 2px;
+    display: inline-block;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menuA {
+    background-position: -3px -15px;
+}
+
+.menuB {
+    background-position: -3px -93px;
+}
+
+.menuC {
+    background-position: -90px -20px;
+}
+
+.menuD {
+    background-position: -180px -20px;
+}
+
+.menuE {
+    background-position: -270px -20px;
+}
+
+.menuF {
+    background-position: -95px -95px;
+}
+
+.menuG {
+    background-position: -187px -95px;
+}
+
+.menuH {
+    background-position: -283px -106px;
+}
+
+.menu ul li:hover {
+    background-color: aquamarine;
+}
+
+.cor1 {
+    background-color: red;
+}
+
+.cor2 {
+    background-color: green;
+}
+
+.cor3 {
+    background-color: orange;
+}
+
+.cor4 {
+    background-color: pink;
+}
+
+.cor5 {
+    background-color: blue;
+}
+
+.caixa-nao {
+    width: 120px;
+    height: 150px;
+    clear: both;
+}
+
+.cor8 {
+    background-color: black;;
+}
