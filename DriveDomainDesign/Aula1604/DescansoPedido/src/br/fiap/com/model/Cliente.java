@@ -12,7 +12,7 @@ public class Cliente {
 
 	public void setNome(String nome) {
 		if(nome.length() > 40) {
-			nome = "NOME INVÁLIDO";
+			nome = "NOME INVALIDO";
 		} else {
 			this.nome.toUpperCase();
 		}
@@ -23,7 +23,10 @@ public class Cliente {
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		if (email.indexOf("@") < 0 || email.indexOf(".") < 0) {
+			email = "erro@fiap.com.br";
+		}
+		this.email = email.toLowerCase();
 	}
 
 	public String getLogin() {

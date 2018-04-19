@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteAluno<DescansoAluno>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "br.fiap.com.teste.TesteAluno",
+            "projectName": "DescansoAluno",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-testePedido<DescansoPedido>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "br.fiap.com.teste.testePedido",
+            "projectName": "DescansoPedido",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteProduto<DescansoProduto>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "br.fiap.com.main.TesteProduto",
+            "projectName": "DescansoProduto",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteExame<ProjetoPassagem>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "br.fiap.com.main.TesteExame",
+            "projectName": "ProjetoPassagem",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteMedico<ProjetoPassagem>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "br.fiap.com.main.TesteMedico",
+            "projectName": "ProjetoPassagem",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 0
+        }
+    ]
+}

@@ -18,6 +18,10 @@ public class ItemPedido {
 	}
 
 	public void setQtde(int qtde) {
+		//Negando quantidade negativa
+		if (qtde <= 0) {
+			qtde = 1;
+		}
 		this.qtde = qtde;
 	}
 
