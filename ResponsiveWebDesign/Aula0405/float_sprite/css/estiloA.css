@@ -1,46 +1,69 @@
-body{background-color:#ccc;}
-#container{
+body {
+	background-color: #ccc;
+}
+
+#container {
 	border: 1px solid red;
 	width: 800px;
 	height: 900px;
 }
-.caixa{
+
+.caixa {
 	width: 120px;
 	height: 150px;
 	float: left;
 }
 
-.caixa-nao{
+.caixa-nao {
 	width: 120px;
 	height: 150px;
 	clear: both;
 }
 
-.cor1{background-color: red;}
-.cor2{background-color: green;}
-.cor3{background-color: orange;}
-.cor4{background-color: pink;}
-.cor5{background-color: blue;}
-.cor8{background-color: black;}
+.cor1 {
+	background-color: red;
+}
 
+.cor2 {
+	background-color: green;
+}
 
-.menu{
-	background-color:#666;
+.cor3 {
+	background-color: orange;
+}
+
+.cor4 {
+	background-color: pink;
+}
+
+.cor5 {
+	background-color: blue;
+}
+
+.cor8 {
+	background-color: black;
+}
+
+.menu {
+	background-color: #666;
 	height: 150px;
 }
 
-.menu ul li{list-style: none;}
-.menu ul li:hover{
-	background-color:#fff;
-	background-position: -90px -17px;
-} 
+.menu ul li {
+	list-style: none;
+}
 
-.imagem{
-	background-image:url(../img/imagens.png); 
+.menu ul li:hover {
+	background-color: #fff;
+	background-position: -90px -17px;
+}
+
+.imagem {
+	background-image: url(../img/imagens.png);
 	background-repeat: no-repeat;
 }
 
-.box{
+.box {
 	width: 80px;
 	height: 80px;
 	border: 1px solid #fff;
@@ -48,18 +71,34 @@ body{background-color:#ccc;}
 	display: inline-block;
 }
 
-.menuA{background-position: -2px -17px;}
-.menuB{background-position: -90px -17px;}
-.menuC{background-position: -180px -17px;}
-.menuD{background-position: -272px -22px;}
-.menuE{background-position: -284px -102px;}
-.menuF{background-position: -185px -102px;}
-.menuG{background-position: -95px -93px;}
-.menuH{background-position: -5px -93px;}
+.menuA {
+	background-position: -2px -17px;
+}
 
+.menuB {
+	background-position: -90px -17px;
+}
 
+.menuC {
+	background-position: -180px -17px;
+}
 
+.menuD {
+	background-position: -272px -22px;
+}
 
+.menuE {
+	background-position: -284px -102px;
+}
 
+.menuF {
+	background-position: -185px -102px;
+}
 
+.menuG {
+	background-position: -95px -93px;
+}
 
+.menuH {
+	background-position: -5px -93px;
+}

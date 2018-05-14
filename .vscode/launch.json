@@ -6,66 +6,19 @@
     "configurations": [
         
         {
-            "type": "java",
-            "name": "Debug (Launch)-TesteAluno<DescansoAluno>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "br.fiap.com.teste.TesteAluno",
-            "projectName": "DescansoAluno",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-testePedido<DescansoPedido>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "br.fiap.com.teste.testePedido",
-            "projectName": "DescansoPedido",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-TesteProduto<DescansoProduto>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "br.fiap.com.main.TesteProduto",
-            "projectName": "DescansoProduto",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-TesteExame<ProjetoPassagem>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "br.fiap.com.main.TesteExame",
-            "projectName": "ProjetoPassagem",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-TesteMedico<ProjetoPassagem>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "br.fiap.com.main.TesteMedico",
-            "projectName": "ProjetoPassagem",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Attach)",
+            "type": "chrome",
             "request": "attach",
-            "hostName": "localhost",
-            "port": 0
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
+
 }

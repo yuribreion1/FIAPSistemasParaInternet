@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    background-image: url(../img/fundo.png);
+    background-attachment: fixed;
+    background-repeat: repeat-x
+}
+
+hr {
+    display: none;
+}
+
+.logo {
+    background-image: url(../img/imagensB.png);
+    width: 170px;
+    height: 154px;
+    background-position: 185px -17px;
+    margin: 20px 20px 0;
+    position: relative;
+}
+
+.menu {
+    width: 900px;
+    height: 50px;
+    background-color: #313131;
+    float: right;
+    bottom: 50px;
+    
+}
+
+.menu ul {
+    list-style: none;
+    margin-left: 300px;
+}
+
+.menu ul li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #656565;
+}
+
+main {
+    clear: both;
+}
