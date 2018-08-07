@@ -1,0 +1,21 @@
+package br.fiap.com.teste;
+
+import javax.swing.JOptionPane;
+
+public class Excecao {
+	public static void main(String[] args) {
+		int x = 0;
+
+		try {
+			x = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+		} catch (NumberFormatException e) {
+			System.out.println("Por favor digite um número valido\n");
+			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("Houve um erro\n");
+			e.printStackTrace();
+		} finally {
+			System.out.println("Até logo");
+		}
+	}
+}
