@@ -6,17 +6,24 @@ import java.sql.SQLException;
 
 public class Teste {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) {
 
 		Connection conn = null;
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "RM79935", "300187");
-		
+
 		try {
-			System.out.println("Conexão aberta");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "RM79935", "300187");
+			System.out.println("Conexao aberta");
+		} catch (Exception e) {
+			e.printStackTrace();
 		} finally {
-			conn.close();
-			System.out.println("Conexão fechada");
+			try {
+				conn.close();
+				System.out.println("Conexao fechada");
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
 		}
-		
+
 	}
 }
