@@ -1,4 +1,4 @@
-package br.com.fiap.model;
+package br.com.fiap.modelo;
 
 public class Cliente {
 

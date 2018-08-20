@@ -1,7 +1,7 @@
 package br.com.fiap.teste;
 
-import br.com.fiap.dao.CadastraClienteDAO;
-import br.com.fiap.model.Cliente;
+import br.com.fiap.dao.ClienteDAO;
+import br.com.fiap.modelo.Cliente;
 
 public class TestaCadastraCliente {
 
@@ -9,7 +9,7 @@ public class TestaCadastraCliente {
 		
 		try {
 			Cliente cli = new Cliente();
-			CadastraClienteDAO cliDao = new CadastraClienteDAO();
+			ClienteDAO cliDao = new ClienteDAO();
 			cli.setNomeCliente("João da Silva");
 			cli.setNumeroCliente(123);
 			cli.setQntEstrelas(3);
