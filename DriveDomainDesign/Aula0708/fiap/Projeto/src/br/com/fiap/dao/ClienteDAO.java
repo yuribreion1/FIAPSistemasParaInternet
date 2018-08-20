@@ -51,6 +51,7 @@ public class ClienteDAO {
 		String sql = "select * from RM79935.T_DDD_CLIENTE where NM_CLIENTE = ?";
 		Cliente cli = new Cliente();
 		PreparedStatement ps = this.conexao.prepareStatement(sql);
+		ps.setString(1, nomeCliente);
 		ResultSet rs = ps.executeQuery();
 		if (rs.next()) {
 			cli.setNumeroCliente(rs.getInt("NR_CLIENTE"));
