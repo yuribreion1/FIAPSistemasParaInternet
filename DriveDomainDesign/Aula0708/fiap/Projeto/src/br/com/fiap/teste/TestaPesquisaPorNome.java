@@ -9,11 +9,13 @@ public class TestaPesquisaPorNome {
 	public static void main(String[] args) {
 		try {
 			ClienteDAO dao = new ClienteDAO();
-			Cliente cli = new Cliente();
 			String strBusca = JOptionPane.showInputDialog("Digite o nome do cliente que esta buscando");
-
+			Cliente cli = new Cliente();
 			cli = dao.getPesquisaClientePorNome(strBusca);
-// TODO verificar		System.out.println(cli.getNomeCliente());
+			
+			System.out.println("Numero do cliente: " + cli.getNumeroCliente() + "\n"
+					+ "Nome do cliente: " + cli.getNomeCliente() + "\n"
+							+ "Quantidade de estrelas: " + cli.getQntEstrelas() );
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
