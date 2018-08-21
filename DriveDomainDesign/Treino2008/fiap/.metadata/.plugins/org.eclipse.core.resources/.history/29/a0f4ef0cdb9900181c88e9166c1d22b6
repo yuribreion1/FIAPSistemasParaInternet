@@ -1,0 +1,10 @@
+package br.fiap.com.teste;
+
+import javax.swing.JOptionPane;
+
+public class Excecao {
+	public static void main(String[] args) {
+		int x = 0;
+		x = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero:"));
+	}
+}

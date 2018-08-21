@@ -1,0 +1,8 @@
+package br.fiap.com.excecao;
+
+public class Excecao extends Exception{
+
+	public String trataExcecao() {
+		return "Deu ruim";
+	}
+}
