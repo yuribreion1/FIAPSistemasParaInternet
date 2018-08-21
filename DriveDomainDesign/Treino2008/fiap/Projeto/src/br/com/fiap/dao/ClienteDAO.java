@@ -28,6 +28,11 @@ public class ClienteDAO {
 		ps.close();
 	}
 
+	/*
+	 * Usamos o list para agrupar todas as possibilidades que fazem parte do tipo
+	 * lista como Vector ou LinkedList
+	 */
+
 	public List<Cliente> getClientes() throws Exception {
 		String sql = "select * from RM79935.T_DDD_CLIENTE";
 		List<Cliente> listaCliente = new ArrayList<Cliente>();
@@ -47,20 +52,22 @@ public class ClienteDAO {
 
 	}
 
-	public Cliente getPesquisaClientePorNome(String nomeCliente) throws SQLException {
-		String sql = "select * from RM79935.T_DDD_CLIENTE where NM_CLIENTE = ?";
-		Cliente cli = new Cliente();
+	public List<Cliente> getPesquisaClientePorNome(String nomeCliente) throws SQLException {
+		String sql = "select * from RM79935.T_DDD_CLIENTE where NM_CLIENTE like ?";
+		List<Cliente> listaClientes = new ArrayList<Cliente>();
 		PreparedStatement ps = this.conexao.prepareStatement(sql);
-		ps.setString(1, nomeCliente);
+		ps.setString(1, "%" + nomeCliente + "%");
 		ResultSet rs = ps.executeQuery();
-		if (rs.next()) {
+		while (rs.next()) {
+			Cliente cli = new Cliente();
 			cli.setNumeroCliente(rs.getInt("NR_CLIENTE"));
 			cli.setNomeCliente(rs.getString("NM_CLIENTE"));
 			cli.setQntEstrelas(rs.getInt("QNT_ESTRELAS"));
+			listaClientes.add(cli);
 		}
 		rs.close();
 		ps.close();
-		return cli;
+		return listaClientes;
 	}
 
 }
