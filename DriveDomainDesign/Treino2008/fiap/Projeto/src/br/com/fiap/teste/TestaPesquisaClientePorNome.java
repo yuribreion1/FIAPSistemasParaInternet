@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import br.com.fiap.dao.ClienteDAO;
 import br.com.fiap.modelo.Cliente;
 
-public class TestaPesquisaPorNome {
+public class TestaPesquisaClientePorNome {
 	public static void main(String[] args) {
 		try {
 			ClienteDAO dao = new ClienteDAO();
