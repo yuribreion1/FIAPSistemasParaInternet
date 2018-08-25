@@ -1,0 +1,159 @@
+body {
+	font-family: arial;
+	font-size: 12px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 900px;
+	border: 5px solid #333;
+}
+
+header {
+	padding: 0;
+	background-color: #78B2EB;
+	height: 80px;
+	border-bottom: 5px dashed #fff;
+}
+
+#logo {
+	width: 60px;
+	height: 60px;
+	background-color: #388DE1;
+	float: left;
+	margin: 8px;
+	border-radius: 50px;
+	border: 2px dashed #fff;
+}
+
+nav {
+	float: right;
+	font-size: 15px;
+	color: #fff;
+}
+
+nav ul {
+	margin: 30px 15px 0 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	border: 1px dashed #fff;
+	background-color: #388DE1;
+}
+
+#banner {
+	margin: 1px 0px 20px 0px;
+	float: left;
+	background-color: #7878C2;
+	width: 100%;
+	height: 100px;
+}
+
+main {
+	display: block;
+	padding: 30px;
+}
+
+main h1 {
+	font-style: italic;
+}
+
+main p {
+	border-bottom: 1px solid #999;
+	padding-bottom: 15px;
+}
+
+article {
+	border: 2px dashed #fff;
+	background-color: #78B2EB;
+	padding: 20px;
+	float: left;
+	margin-bottom: 20px;
+	width: 583px;
+}
+
+article p {
+	width: 550px;
+	float: left;
+}
+
+aside {
+	float: right;
+	width: 200px;
+	background-color: #CCE2F7;
+	border-radius: 0px 10px 0 10px;
+	border: 2px dashed #fff;
+}
+
+footer {
+	clear: both;
+	padding: 20px;
+	border: 2px dashed #fff;
+	background-color: #ccc;
+}
+
+@media screen and (max-width: 360px) {
+	#logo {
+		background-color: #FF4200;
+	}
+	header {
+		background-color: #1206b2;
+		height: 200px;
+	}
+	nav ul li {
+		display: block;
+	}
+	aside {
+		float: left;
+	}
+	article {
+		width: 90%;
+	}
+	article p {
+		text-align: left;
+		width: 100%;
+	}
+	footer {
+		display: none;
+	}
+	#banner {
+		display: none;
+	}
+	#container {
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 361px) and (max-width: 640px){
+	#logo {
+		background-color: #000;
+	}
+	header {
+		background-color: #fff;
+		border: 5px solid #78B2EB;
+	}
+	h1 {
+		text-align: center;
+	}
+	article {
+		float: right;
+	}
+	aside {
+		background-color: #FF7355;
+		color: #313582;
+	}
+	footer {
+		background-color: #000;
+		color: whitesmoke;
+	}
+	main p {
+		text-align: center;
+	}
+	#banner {
+		display: none;
+	}
+}
