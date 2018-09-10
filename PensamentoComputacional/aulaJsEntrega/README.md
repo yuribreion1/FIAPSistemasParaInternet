@@ -1,14 +1,14 @@
 # Exercicios para entregar - JS
 
 1) Criar uma página em HTML 5 com o JS externo, nesse JS tenha três alerts no mesmo script, executando automaticamente quando abrir a página, sendo cada alert com as frases abaixo:
-	1.1 - Sua primeira página com JS;
+	<br>1.1 - Sua primeira página com JS;
 	1.2 - Segundo alert no mesmo script;
 	1.3 - Terceiro e último alert no mesmo script.
 
 <br>
 
 2) Criar uma página em HTML 5 com o JS externo, conforme características abaixo:
-	2.1 - A página tem que receber o NOME e idade de duas pessoas;
+	<br>2.1 - A página tem que receber o NOME e idade de duas pessoas;
 	2.2 - Para essa página só deve considerar na lógica que só uma pessoa será maior de idade e a outra menor de idade;
 	2.3 - A lógica deverá verificar qual é maior de idade e retornar com um alert a frase "NOME você é maior de idade".
 
@@ -23,14 +23,14 @@
 <br>
 
 5) Criar uma página em HTML 5 com o JS externo, conforme características abaixo:
-	5.1 - Receber três números inteiros no formulário;
+	<br>5.1 - Receber três números inteiros no formulário;
 	5.2 - Retornar em ordem crescente no alert;
 	5.3 - Se os três números forem iguais retornar a mensagem no alert que os números são iguais.
 
 <br>
 
 6) Criar uma página em HTML 5 com o JS externo, conforme as características abaixo:	
-	6.1 - Receber dois números inteiros no formulário;
+	<br>6.1 - Receber dois números inteiros no formulário;
 	6.2 - No JS somar os dois números e verificar se menor ou maior/igual a 18;
 	6.2.1 - Se maior ou igual a 18, retornar a mensagem: O valor é maior ou igual a 18 e na frente o valor da soma.
 	6.3.1 - Se menor que 18, retornar a mensagem: O valor é menor que 18 e na frente o valor da soma.
