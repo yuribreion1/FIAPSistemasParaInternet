@@ -5,6 +5,15 @@ public class Cliente {
 	private int numeroCliente;
 	private String nomeCliente;
 	private int qntEstrelas;
+	private Endereco endereco;
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 
 	public int getNumeroCliente() {
 		return numeroCliente;
@@ -30,14 +39,17 @@ public class Cliente {
 		this.qntEstrelas = qntEstrelas;
 	}
 
-	public Cliente(int numeroCliente, String nomeCliente, int qntEstrelas) {
+	public Cliente(int numeroCliente, String nomeCliente, int qntEstrelas, Endereco endereco) {
 		setNumeroCliente(numeroCliente);
 		setNomeCliente(nomeCliente);
 		setQntEstrelas(qntEstrelas);
+		setEndereco(endereco);
 	}
-
+	
 	public Cliente() {
-
+		
 	}
+
+	
 
 }
