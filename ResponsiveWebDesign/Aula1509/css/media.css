@@ -1,0 +1,22 @@
+@media screen and (min-width: 560px) {
+    .logo {
+        width: 160px;
+        height: 100px;
+        float: left;
+        background: url(../img/logo_large.jpg) center center/150px no-repeat;
+        
+    }
+    .buttons {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        float: left;
+        background: url(../img/logo.jpg) center center/46px no-repeat;
+    }
+}
+

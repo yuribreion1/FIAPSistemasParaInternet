@@ -26,10 +26,10 @@ body {
 }
 
 .logo {
-    width: 80%;
-    height: 80%;
+    width: 80px;
+    height: 80px;
     float: left;
-    background: url(../img/logo.jpg) center center/56px no-repeat;
+    background: url(../img/logo.jpg) center center/46px no-repeat;
     font-size: 0;
 }
 
@@ -41,7 +41,7 @@ body {
     text-align: center;
     border: 0px;
     cursor: pointer;
-    margin: 4% 4% 0 0;
+    margin: 4% 10% 0 0;
     color: #fff;
     background: linear-gradient(to right,#16466a, #81929c);
     font-size: 1.5em;
