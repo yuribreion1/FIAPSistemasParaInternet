@@ -1,0 +1,170 @@
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    /* Ajustando tamanho das imagens */
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto', 'Arial' ;
+    background-color: #fff;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    width: 100%;
+    float: left;
+    padding: 3% 4%; 
+}
+
+.logo {
+    width: 80%;
+    height: 80%;
+    float: left;
+    background: url(../img/logo.jpg) center center/56px no-repeat;
+    font-size: 0;
+}
+
+.btn-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 56px;
+    float: right;
+    text-align: center;
+    border: 0px;
+    cursor: pointer;
+    margin: 4% 4% 0 0;
+    color: #fff;
+    background: linear-gradient(to right,#16466a, #81929c);
+    font-size: 1.5em;
+}
+
+.btn-close {
+    font-size: 2em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 8% 9%;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(22, 70, 106, 0.9);
+    display: none;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu ul li {
+    padding: 1.5%;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1.5% 3%;
+}
+
+figcaption {
+    font-size: 1.5em;
+    color: #16466a;
+    font-weight: 300;
+    margin-bottom: 5%;
+    font-family: 'Arial';
+}
+
+.buttons {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.btn-cadastro {
+    background-color: #81929c;
+    color: #fff;
+}
+
+.btn-sobre {
+    background-color: #16466a;
+    color: #fff;
+    margin-top: 2%;
+}
+
+.buttons i {
+    float: right;
+}
+
+/* Servicos */
+.servicos {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    background-color: #e3e4e6;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+
+.servicos img {
+    border-radius: 7px 7px 0 0;
+}
+
+.servicos .texto {
+    padding: 7%;
+}
+
+.servicos .texto h4 {
+    color: #16466a;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.servicos .texto p{
+    color: #666;
+    font-style: italic;
+}
+
+footer {
+    padding: 3% 4%;
+    width: 100%;
+    background-color: #16466a;
+    text-align: center;
+    float: left;
+}
+
+footer .social-icones a {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 7%;
+    font-size: 1.5em;
+}
+
+footer .social-icones a:hover {
+    color: rgba(255, 255, 255, 1);
+    padding: 7%;
+    font-size: 1.5em;
+}
