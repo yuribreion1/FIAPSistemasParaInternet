@@ -14,7 +14,7 @@
 <title>PAON - Beauty Path</title>
 </head>
 <body class="container">
-	<h1 class="display-4">PAON - Admin da beleza</h1>
+	<h1 class="display-4">PAON - Listagem de clientes</h1>
 	<hr>
 	<ul class="nav nav-pills">
 		<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
@@ -25,14 +25,6 @@
 				<a class="dropdown-item" href="insereCliente.jsp">Cliente</a> 
 				<a class="dropdown-item" href="insereCatalogo.jsp">Catalogo</a>
 				<a class="dropdown-item" href="insereProfissional.jsp">Profissional</a>
-				<!-- <div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Separated link</a> -->
-			</div></li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-			data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-			aria-expanded="false">Listagem</a>
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="listaClientes.jsp">Clientes</a> 
 				<!-- <div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Separated link</a> -->
 			</div></li>

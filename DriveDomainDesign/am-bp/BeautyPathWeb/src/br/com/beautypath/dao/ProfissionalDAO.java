@@ -11,7 +11,7 @@ public class ProfissionalDAO {
 	private PreparedStatement ps;
 	
 	public String gravar(Profissional prof, Connection conexao) throws SQLException {
-		String sql = "insert into rm79935.profissional(COD_PROF, NOME_PROF, TEL_PROF, REG_PROF, SOCIAL_URL_1_PROF, SOCIAL_URL_2_PROF) values (SEQ_PROFISSIONAL, ?, ?, ?, ?, ? )";
+		String sql = "insert into rm79935.profissional(COD_PROF, NOME_PROF, TEL_PROF, REG_PROF, SOCIAL_URL_1_PROF, SOCIAL_URL_2_PROF) values (PROFISSIONAL_SEQ.NEXTVAL, ?, ?, ?, ?, ? )";
 		ps = conexao.prepareStatement(sql);
 		ps.setString(1, prof.getNome());
 		ps.setString(2, prof.getTelefone());

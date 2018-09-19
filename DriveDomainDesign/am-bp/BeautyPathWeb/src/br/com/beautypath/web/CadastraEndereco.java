@@ -9,38 +9,39 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.beautypath.dao.ClienteDAO;
 import br.com.beautypath.dao.ConnectionFactory;
-import br.com.beautypath.modelo.Cliente;
+import br.com.beautypath.dao.EnderecoDAO;
+import br.com.beautypath.modelo.Endereco;
 
-@WebServlet(urlPatterns = "/cadastra-cliente")
-public class CadastraCliente extends HttpServlet {
+@WebServlet(urlPatterns = "/cadastra-endereco")
+public class CadastraEndereco extends HttpServlet{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
-		Cliente cli = new Cliente();
+		Endereco end = new Endereco();
 		Connection conexao;
 		try {
 			conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
-			ClienteDAO dao = new ClienteDAO();
+			EnderecoDAO dao = new EnderecoDAO();
 			
-			cli.setNome(req.getParameter("nome"));
-			cli.setTelefone(req.getParameter("telefone"));
-			cli.setEmail(req.getParameter("email"));
-			cli.setSocialUrl(req.getParameter("socialUrl"));
+			end.setLogradouro(req.getParameter("logradouro"));
+			end.setCidade(req.getParameter("cidade"));
+			end.setEstado(req.getParameter("estado"));
+			end.setCep(req.getParameter("cep"));
 			
-			dao.gravar(cli, conexao);
-			System.out.println("Endereço cadastrado com sucesso");
+			dao.gravar(end, conexao);
 			res.sendRedirect("index.jsp");
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
-		}		
+		}
 	}
+
 	
 }
