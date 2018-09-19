@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/yuribreion/am-bp/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+14898036.index
+2718391909.index
+445942969.index
+1685898611.index
+2021236319.index
+3891867870.index
+305448777.index

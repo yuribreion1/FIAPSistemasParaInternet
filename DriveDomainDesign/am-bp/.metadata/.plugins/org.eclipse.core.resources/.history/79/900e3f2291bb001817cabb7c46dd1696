@@ -1,0 +1,10 @@
+package br.com.beautypath.web;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet(urlPatterns = "/busca-cliente")
+public class BuscaCliente extends HttpServlet{
+
+	
+}

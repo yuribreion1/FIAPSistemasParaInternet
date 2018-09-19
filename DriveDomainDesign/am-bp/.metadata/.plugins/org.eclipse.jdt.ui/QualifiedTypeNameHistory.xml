@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="br.com.beautypath.connectionFactory.ConnectionFactory"/>
+<fullyQualifiedTypeName name="br.com.beautypath.dao.ConnectionFactory"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="br.com.beautypath.modelo.Catalogo"/>
+<fullyQualifiedTypeName name="br.com.beautypath.dao.CatalogoDAO"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="br.com.beautypath.modelo.Cliente"/>
+<fullyQualifiedTypeName name="br.com.beautypath.excecao.Excecao"/>
+<fullyQualifiedTypeName name="br.com.beautypath.dao.ClienteDAO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

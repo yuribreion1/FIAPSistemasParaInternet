@@ -1,0 +1,5 @@
+package br.com.beautypath.bo;
+
+public class ClienteBO {
+
+}

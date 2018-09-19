@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import="java.sql.*"
+    page language="java" import="br.com.beautypath.dao.connectionFactory"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PAON - Beauty Path</title>
+</head>
+<body>
+	
+</body>
+</html>

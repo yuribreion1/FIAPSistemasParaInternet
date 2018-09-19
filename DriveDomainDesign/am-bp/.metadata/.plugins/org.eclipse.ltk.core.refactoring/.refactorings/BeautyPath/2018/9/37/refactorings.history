@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;br.com.beautpath.modelo&apos; to &apos;br.com.beautypath.modelo&apos;&#x0A;- Original project: &apos;BeautyPath&apos;&#x0A;- Original element: &apos;BeautyPath/src/br.com.beautpath.modelo&apos;&#x0A;- Renamed element: &apos;BeautyPath/src/br.com.beautypath.modelo&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;br.com.beautpath.modelo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;br.com.beautpath.modelo" name="br.com.beautypath.modelo" qualified="false" references="true" stamp="1536637068500" textual="false" version="1.0"/>
+</session>

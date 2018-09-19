@@ -1,0 +1,13 @@
+package br.com.beautypath.bo;
+
+import br.com.beautypath.excecao.Excecao;
+import br.com.beautypath.modelo.Cliente;
+
+public class ClienteBO {
+	
+	public void cadastraCliente(Cliente cli) throws Exception {
+		if (cli.getNome().length() > 30) {
+			throw new Excecao("Valor superior a 30 caracteres");
+		}
+	}
+}

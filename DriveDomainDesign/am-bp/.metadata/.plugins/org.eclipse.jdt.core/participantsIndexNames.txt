@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/Users/yuribreion/am-bp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/445942969.index
+/BeautyPathWeb/src
+/Users/yuribreion/am-bp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3238017426.index
+/BeautyPath

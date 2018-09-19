@@ -1,0 +1,34 @@
+package br.com.beautypath.web;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import br.com.beautypath.modelo.Cliente;
+
+@WebServlet(urlPatterns = "/cadastra-cliente")
+public class CadastraCliente extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
+		Cliente cli = new Cliente();
+		
+		cli.setNome(req.getParameter("name"));
+		cli.setTelefone(req.getParameter("telefone"));
+		cli.setEmail(req.getParameter("email"));
+		cli.setSocialUrl(req.getParameter("socialUrl"));
+		
+		System.out.println("Nome: " + cli.getNome() + "\nTelefone: " + cli.getTelefone());
+		
+	}
+	
+}
