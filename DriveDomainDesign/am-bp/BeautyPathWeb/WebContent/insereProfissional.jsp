@@ -40,6 +40,7 @@
 		
 		<button type="submit" class="btn btn-primary">Submit</button>
 		<a href="index.jsp"><button type="button" class="btn btn-secondary">Voltar</button></a>
+		<a href="index.jsp"><button type="button" class="btn btn-secondary">Voltar</button></a>
 	</form>
 </body>
 </html>

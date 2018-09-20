@@ -17,6 +17,8 @@ public class Excecao extends Exception{
 			System.out.println("Erro no carregamento do arquivo");
 		} else if (e.getClass().getName().equals("java.sql.SQLIntegrityConstraintViolationException")) {
 			System.out.println("Antes de inserir um registro para esta funcionálidade, inserir seus dependentes");
+		} else if (e.getClass().getName().equals("java.sql.SQLRecoverableException")) {
+			System.out.println("Banco de dados não esta respondendo");
 		}
 	}
 
@@ -32,7 +34,9 @@ public class Excecao extends Exception{
 			System.out.println("Erro no carregamento do arquivo");
 		} else if (e.getClass().getName().equals("java.sql.SQLIntegrityConstraintViolationException")) {
 			System.out.println("Antes de inserir um registro para esta funcionálidade, inserir seus dependentes");
-		} else {
+		} else if (e.getClass().getName().equals("java.sql.SQLRecoverableException")) {
+			System.out.println("Banco de dados não esta respondendo");
+		}else {
 			return "Erro ainda nao mapeado";
 		}
 		return "Houve um erro";
