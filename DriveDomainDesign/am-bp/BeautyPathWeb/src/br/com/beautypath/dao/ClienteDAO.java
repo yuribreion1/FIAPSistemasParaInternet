@@ -13,7 +13,12 @@ public class ClienteDAO {
 
 	private PreparedStatement ps;
 	private ResultSet rs;
+	private Connection conexao;
 
+	public ClienteDAO() throws Exception {
+		this.conexao = new ConnectionFactory().getConnection();
+	}
+	
 	/**
 	 * 
 	 * @param Cliente
@@ -23,7 +28,7 @@ public class ClienteDAO {
 	 * @see Clientes + gravar(): Recebe um cliente como parametro
 	 */
 
-	public String gravar(Cliente cli, Connection conexao) throws SQLException {
+	public String gravar(Cliente cli) throws SQLException {
 		String sql = "insert into rm79935.cliente(COD_CLI, NOME_CLI, TEL_CLI, EMAIL_CLI, SOCIAL_URL_CLI) values (SEQ_CLIENTE.NEXTVAL, ?, ?, ?, ?)";
 		ps = conexao.prepareStatement(sql);
 		ps.setString(1, cli.getNome());
@@ -42,14 +47,14 @@ public class ClienteDAO {
 	 * @throws SQLException
 	 * @author Yuri Breion
 	 */
-	public int apagar(int numero, Connection conexao) throws SQLException {
+	public int apagar(int numero) throws SQLException {
 		String sql = "delete from rm79935.cliente where COD_CLI = ?";
 		ps = conexao.prepareStatement(sql);
 		ps.setInt(1, numero);
 		return ps.executeUpdate();
 	}
 
-	public List<Cliente> getClientes(Connection conexao) throws SQLException {
+	public List<Cliente> getClientes() throws SQLException {
 		String sql = "select * from rm79935.cliente";
 		List<Cliente> listaClientes = new ArrayList<Cliente>();
 		ps = conexao.prepareStatement(sql);
