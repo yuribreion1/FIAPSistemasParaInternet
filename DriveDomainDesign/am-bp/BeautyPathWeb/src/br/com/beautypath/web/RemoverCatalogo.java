@@ -2,7 +2,6 @@ package br.com.beautypath.web;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.util.logging.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,32 +9,32 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.beautypath.dao.ClienteDAO;
+import br.com.beautypath.dao.CatalogoDAO;
 import br.com.beautypath.dao.ConnectionFactory;
 
-@WebServlet(urlPatterns = "lista-clientes")
-public class ListaClientes extends HttpServlet {
+@WebServlet(urlPatterns = "/remove-catalogo")
+public class RemoverCatalogo extends HttpServlet {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	private static final Logger LOGGER = Logger.getLogger("Logger");
-	
-	protected void doGet (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+		int cat = Integer.parseInt(req.getParameter("codigo"));
 		Connection conexao;
-		
+
 		try {
 			conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
-			ClienteDAO dao = new ClienteDAO();
-			
-			dao.getClientes(conexao);
-			LOGGER.info("Clientes listados");
-			
+			CatalogoDAO dao = new CatalogoDAO();
+
+			dao.apagar(cat, conexao);
+
+			res.sendRedirect("index.jsp");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
 }

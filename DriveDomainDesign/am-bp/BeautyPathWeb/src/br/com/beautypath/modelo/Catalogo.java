@@ -1,15 +1,15 @@
 package br.com.beautypath.modelo;
 
 public class Catalogo {
-	private int idCatelogo;
+	private int idCatalogo;
 	private String descricao;
 
-	public int getIdCatelogo() {
-		return idCatelogo;
+	public int getIdCatalogo() {
+		return idCatalogo;
 	}
 
-	public void setIdCatelogo(int idCatelogo) {
-		this.idCatelogo = idCatelogo;
+	public void setIdCatalogo(int idCatelogo) {
+		this.idCatalogo = idCatelogo;
 	}
 
 	public String getDescricao() {
@@ -26,7 +26,7 @@ public class Catalogo {
 
 	public Catalogo(int idCatelogo, String descricao) {
 		super();
-		setIdCatelogo(idCatelogo);
+		setIdCatalogo(idCatelogo);
 		setDescricao(descricao);
 	}
 
@@ -35,12 +35,12 @@ public class Catalogo {
 	}
 
 	public String getAll() {
-		return "Cod. Catalogo: " + idCatelogo + "\nDescricao: " + descricao;
+		return "Cod. Catalogo: " + idCatalogo + "\nDescricao: " + descricao;
 	}
 
 	public void setAll(int idCatelogo, String descricao) {
 
-		setIdCatelogo(idCatelogo);
+		setIdCatalogo(idCatelogo);
 		setDescricao(descricao);
 	}
 

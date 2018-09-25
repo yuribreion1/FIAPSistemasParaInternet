@@ -23,10 +23,10 @@ public class CatalogoDAO {
 		return "Catalogo gravado com sucesso";
 	}
 
-	public int apagar(int numero, Connection conexao) throws SQLException {
+	public int apagar(int i, Connection conexao) throws SQLException {
 		String sql = "delete from rm79935.catalogo where COD_CAT = ?";
 		ps = conexao.prepareStatement(sql);
-		ps.setInt(1, numero);
+		ps.setInt(1, i);
 		return ps.executeUpdate();
 	}
 
@@ -37,7 +37,7 @@ public class CatalogoDAO {
 		rs = ps.executeQuery();
 		while (rs.next()) {
 			Catalogo cat = new Catalogo();
-			cat.setIdCatelogo(rs.getInt("COD_CAT"));
+			cat.setIdCatalogo(rs.getInt("COD_CAT"));
 			cat.setDescricao(rs.getString("DESC_CAT"));
 			listaCatalogos.add(cat);
 		}

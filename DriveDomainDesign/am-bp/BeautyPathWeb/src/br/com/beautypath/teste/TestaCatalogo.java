@@ -25,7 +25,7 @@ public class TestaCatalogo {
 			
 			List<Catalogo> lista = dao.getCatalogos(c);
 			for (Catalogo catalogo : lista) {
-				System.out.println("Código do catalogo: " + catalogo.getIdCatelogo() + "\nDescrição: " + catalogo.getDescricao() + "\n" );
+				System.out.println("Código do catalogo: " + catalogo.getIdCatalogo() + "\nDescrição: " + catalogo.getDescricao() + "\n" );
 			}
 			
 			
