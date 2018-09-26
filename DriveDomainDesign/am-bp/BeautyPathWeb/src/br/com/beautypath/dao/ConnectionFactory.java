@@ -1,16 +1,31 @@
 package br.com.beautypath.dao;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
-public class ConnectionFactory {
+public final class ConnectionFactory {
 
-	private String host = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-	private String user = "RM79935";
-	private String pw = "300187";
+	private static ConnectionFactory conexao = null;
 
-	public Connection getConnection() throws SQLException {
-		return DriverManager.getConnection(host, user, pw);
+	public static ConnectionFactory controlarInstancia() {
+		if (conexao == null) {
+			conexao = new ConnectionFactory();
+		}
+		return conexao;
+	}
+
+	public Connection getConnection(String user, String pw) throws Exception {
+		FileReader arquivo = new FileReader(System.getProperty("user.dir") + ("/banco.txt"));
+		BufferedReader dados = new BufferedReader(arquivo);
+		String url = dados.readLine();
+		if (url.indexOf("oracle") > 0) {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} else {
+			System.out.println("Erro ao achar o driver");
+		}
+		dados.close();
+		return DriverManager.getConnection(url, user, pw);
 	}
 }
