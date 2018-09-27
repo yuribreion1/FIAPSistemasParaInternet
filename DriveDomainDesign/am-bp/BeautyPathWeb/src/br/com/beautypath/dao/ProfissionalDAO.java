@@ -7,6 +7,17 @@ import java.sql.SQLException;
 import br.com.beautypath.modelo.Profissional;
 
 public class ProfissionalDAO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param prof			profissional
+	 * @param conexao		conexao com o banco
+	 * @exception sqlException
+	 * @return gravar 		profissional gravado no banco
+	 * @return apagar		apagar profissional do banco
+	 */
+
 
 	private PreparedStatement ps;
 	

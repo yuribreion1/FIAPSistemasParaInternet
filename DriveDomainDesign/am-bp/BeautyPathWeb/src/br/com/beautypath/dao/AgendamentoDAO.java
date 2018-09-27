@@ -12,6 +12,16 @@ import br.com.beautypath.modelo.Endereco;
 import br.com.beautypath.modelo.Profissional;
 
 public class AgendamentoDAO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param agd			agendamento
+	 * @param conexao		conexao com o banco
+	 * @exception sqlException
+	 * @return gravar 		cliente gravado no banco
+	 */
+	
 	private PreparedStatement ps;
 	
 	Cliente cli = new Cliente();

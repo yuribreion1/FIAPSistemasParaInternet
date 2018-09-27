@@ -6,6 +6,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public final class ConnectionFactory {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param user			usuário de conexao
+	 * @param password		senha de acesso
+	 * @exception sqlException
+	 * @return getConnection(url, user, pw)
+	 */
+
 
 	private static ConnectionFactory conexao = null;
 

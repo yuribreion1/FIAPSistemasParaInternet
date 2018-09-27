@@ -19,7 +19,10 @@ import br.com.beautypath.modelo.Catalogo;
 public class ListaCatalogos extends HttpServlet {
 
 	/**
-	 * 
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param req	http request feito pelo servlet
+	 * @param res	http response feito pelo servlet
 	 */
 	private static final long serialVersionUID = 1L;
 	

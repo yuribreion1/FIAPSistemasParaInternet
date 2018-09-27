@@ -7,6 +7,17 @@ import java.sql.SQLException;
 import br.com.beautypath.modelo.Endereco;
 
 public class EnderecoDAO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param end			endereço
+	 * @param conexao		conexao com o banco
+	 * @exception sqlException
+	 * @return gravar 		endereco gravado no banco
+	 * @return apagar		apagar endereco do banco
+	 */
+
 
 	private PreparedStatement ps;
 	

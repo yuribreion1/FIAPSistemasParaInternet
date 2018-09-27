@@ -15,12 +15,14 @@ public class ClienteDAO {
 	private ResultSet rs;
 
 	/**
-	 * 
-	 * @param Cliente
-	 * @return executa o comando insert na tabela
-	 * @throws SQLException
-	 * @author Yuri Breion
-	 * @see Clientes + gravar(): Recebe um cliente como parametro
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param cli			cliente
+	 * @param conexao		conexao com o banco
+	 * @exception sqlException
+	 * @return gravar 		catalogo gravado no banco
+	 * @return apagar		apagar catalogo do banco
+	 * @return getClientes	lista os clientes no banco
 	 */
 
 	public String gravar(Cliente cli, Connection conexao) throws SQLException {

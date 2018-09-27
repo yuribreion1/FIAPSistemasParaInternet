@@ -20,7 +20,10 @@ public class CadastraProfissional extends HttpServlet {
 	private static final Logger LOGGER = Logger.getLogger("Logger");
 
 	/**
-	 * 
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param req	http request feito pelo servlet
+	 * @param res	http response feito pelo servlet
 	 */
 	private static final long serialVersionUID = 1L;
 

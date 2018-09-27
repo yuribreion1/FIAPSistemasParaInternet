@@ -10,6 +10,16 @@ import java.util.List;
 import br.com.beautypath.modelo.Catalogo;
 
 public class CatalogoDAO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param cat			catalogo
+	 * @param conexao		conexao com o banco
+	 * @exception sqlException
+	 * @return gravar 		catalogo gravado no banco
+	 * @return apagar		apagar catalogo do banco
+	 */
 
 	private PreparedStatement ps;
 	private ResultSet rs;
