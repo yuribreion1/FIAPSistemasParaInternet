@@ -10,7 +10,7 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	crossorigin="anonymous">
-<title>Beauty Path - Listagem de Catalogos</title>
+<title>Beauty Path - Listagem de Endereços</title>
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
 	$(function() {
 
 		var count = 0;
-		$("td[name^='catalogo_']").each(function(index) {
+		$("td[name^='endereco_']").each(function(index) {
 			count++;
 		});
 
@@ -32,11 +32,11 @@
 
 </head>
 <body class="container">
-	<h1 class="display-4">PAON - Lista de catalogo</h1>
+	<h1 class="display-4">PAON - Lista de Endereços</h1>
 	<hr>
 	<ul>
 
-		<form method="post" action="lista-catalogo">
+		<form method="post" action="lista-endereco">
 			<button id="listar" hidden="true">Listar</button>
 
 			<div class="row">
@@ -46,14 +46,20 @@
 							<thead>
 								<tr>
 									<th>ID</th>
-									<th>Descrição</th>
+									<th>Logradouro</th>
+									<th>Cidade</th>
+									<th>CEP</th>
+									<th>Estado</th>
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach var="catalogo" items="${catalogos}">
+								<c:forEach var="endereco" items="${enderecos}">
 									<tr>
-										<td name="catalogo_${catalogo.getIdCatalogo()}">${catalogo.getIdCatalogo()}</td>
-										<td>${catalogo.getDescricao()}</td>
+										<td name="endereco_${endereco.getIdEndereco()}">${endereco.getIdEndereco()}</td>
+										<td>${endereco.getLogradouro()}</td>
+										<td>${endereco.getCidade()}</td>
+										<td>${endereco.getCep()}</td>
+										<td>${endereco.getEstado()}</td>
 									</tr>
 								</c:forEach>
 							</tbody>
