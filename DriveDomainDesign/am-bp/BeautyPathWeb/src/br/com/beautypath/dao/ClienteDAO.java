@@ -52,7 +52,7 @@ public class ClienteDAO {
 	}
 
 	public List<Cliente> getClientes(Connection conexao) throws SQLException {
-		String sql = "select * from rm79935.cliente";
+		String sql = "select * from rm79935.cliente order by 1 asc";
 		List<Cliente> listaClientes = new ArrayList<Cliente>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();

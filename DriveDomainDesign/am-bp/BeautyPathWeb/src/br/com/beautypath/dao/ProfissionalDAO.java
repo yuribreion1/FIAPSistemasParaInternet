@@ -46,7 +46,7 @@ public class ProfissionalDAO {
 	}
 	
 	public List<Profissional> getProfissionais(Connection conexao) throws Exception {
-		String sql = "select * from rm79935.profissional";
+		String sql = "select * from rm79935.profissional order by 1 asc";
 		List<Profissional> listaProfissionals = new ArrayList<Profissional>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();

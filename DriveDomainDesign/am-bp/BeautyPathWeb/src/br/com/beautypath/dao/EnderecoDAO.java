@@ -45,7 +45,7 @@ public class EnderecoDAO {
 	}
 	
 	public List<Endereco> getEnderecos(Connection conexao) throws Exception {
-		String sql = "select * from rm79935.endereco";
+		String sql = "select * from rm79935.endereco order by 1 asc";
 		List<Endereco> listaEnderecos = new ArrayList<Endereco>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();
