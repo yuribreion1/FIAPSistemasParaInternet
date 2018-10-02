@@ -36,6 +36,9 @@ public class ListaCatalogos extends HttpServlet {
 			
 			RequestDispatcher dispatcher = req.getRequestDispatcher("listaCatalogo.jsp");
 			dispatcher.forward(req, res);
+			
+			conexao.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

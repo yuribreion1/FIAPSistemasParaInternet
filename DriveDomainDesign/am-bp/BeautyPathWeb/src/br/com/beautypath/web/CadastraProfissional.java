@@ -40,6 +40,9 @@ public class CadastraProfissional extends HttpServlet {
 			dao.gravar(prof, conexao);
 			System.out.println("Profissional cadastrado com sucesso");
 			res.sendRedirect("index.jsp");
+			
+			conexao.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

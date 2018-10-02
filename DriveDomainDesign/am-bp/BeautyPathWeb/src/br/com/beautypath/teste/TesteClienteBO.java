@@ -7,6 +7,14 @@ import br.com.beautypath.excecao.Excecao;
 import br.com.beautypath.modelo.Cliente;
 
 public class TesteClienteBO {
+	
+	/**
+	 * @author yuribreion
+	 * @param cli 
+	 * @see ClienteBO
+	 * @exception getErro()
+	 * @throws Exception
+	 */
 
 	public static void main(String[] args) throws Exception{
 		try {
@@ -18,10 +26,11 @@ public class TesteClienteBO {
 			cli.setTelefone(JOptionPane.showInputDialog("Digite o telefone:"));
 			cli.setEmail(JOptionPane.showInputDialog("Digite o e-mail"));
 			cli.setSocialUrl(JOptionPane.showInputDialog("Digite a rede social:"));
+			
 			bo.cadastraCliente(cli);
 			
 		} catch (Exception e) {
-			throw new Excecao("Cliente não cadastrado devido erros de preenchimento", e);
+			throw Excecao.getErro(e);
 		}
 	}
 }

@@ -32,6 +32,9 @@ public class ListaProfissionais extends HttpServlet {
 
 			RequestDispatcher dispatcher = req.getRequestDispatcher("listaProfissional.jsp");
 			dispatcher.forward(req, res);
+			
+			conexao.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

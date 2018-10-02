@@ -36,6 +36,9 @@ public class ListaClientes extends HttpServlet {
 			
 			RequestDispatcher dispatcher = req.getRequestDispatcher("listaCliente.jsp");
 			dispatcher.forward(req, res);
+			
+			conexao.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

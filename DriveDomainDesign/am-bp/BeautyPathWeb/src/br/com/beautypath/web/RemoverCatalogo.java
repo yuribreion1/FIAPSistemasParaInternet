@@ -35,6 +35,8 @@ public class RemoverCatalogo extends HttpServlet {
 			dao.apagar(cat, conexao);
 
 			res.sendRedirect("index.jsp");
+			
+			conexao.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();

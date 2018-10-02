@@ -34,6 +34,9 @@ public class ListaEndereco extends HttpServlet {
 			
 			RequestDispatcher dispatcher = req.getRequestDispatcher("listaEndereco.jsp");
 			dispatcher.forward(req, res);
+			
+			conexao.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -38,6 +38,8 @@ public class CadastraCliente extends HttpServlet {
 			cli.setSocialUrl(req.getParameter("socialUrl"));
 			
 			dao.gravar(cli, conexao);
+			
+			conexao.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();
