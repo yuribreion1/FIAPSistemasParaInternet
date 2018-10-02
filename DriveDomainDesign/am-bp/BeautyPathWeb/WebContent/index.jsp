@@ -34,7 +34,9 @@
 			aria-expanded="false">Listagem</a>
 			<div class="dropdown-menu">
 				<a class="dropdown-item" href="listaCatalogo.jsp">Catalogo</a>
-				<a class="dropdown-item" href="listaEndereco.jsp">Endereço</a>  
+				<a class="dropdown-item" href="listaEndereco.jsp">Endereço</a> 
+				<a class="dropdown-item" href="listaCliente.jsp">Cliente</a>
+				<a class="dropdown-item" href="listaProfissional.jsp">Profissional</a>  
 				<!-- <div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Separated link</a> -->
 			</div></li>
