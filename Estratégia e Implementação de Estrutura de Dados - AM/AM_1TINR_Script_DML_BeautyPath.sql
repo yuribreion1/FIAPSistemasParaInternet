@@ -1,3 +1,5 @@
+/* Criar 20 registros para cada tabela */
+
 -- Script de carga 
 -- CLIENTE
 
