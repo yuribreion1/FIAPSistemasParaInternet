@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    a { display: block;}
+
+    a:before {content: '['}
+    a:after {content: ']'}
+
+    /* a:after { content: '(externo)'} */
+
+    .email-address:before {content: 'Meu endereço é:'}
+
+    ol {
+        list-style-type: none; /* Remover a label da lista */ 
+        counter-reset: contador; /* Definindo uma variavel */ 
+    }
+
+    li:before {
+        content: "Link " counter(contador) " "; /* Atribuindo a variavel contador */ 
+        counter-increment: contador; /* Acionar o contador */ 
+    }
+
+    /* :lang(en) > q {quotes: ' " ' ' " ' ;}      
+    :lang(no) > q {quotes: ' ® ' ' º ' ;}         */
+
+    q:before {content: open-quote;}
+    q:after {content: close-quote;}
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo elemento</h1>
+    <a href="#">Texto 01</a>
+    <a href="#">Texto 02</a>
+    <a href="#">Texto 03</a>
+    <a href="#">Texto 04</a>
+    <br>
+    <a href="https://www.uol.com.br" class="email-address">Uol</a>
+
+    <hr>
+    
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ol>
+
+    <hr>
+    <p lang="en"><q>Batatinha quando nasce esparrama pelo chão</q></p>
+    <p lang="no"><q>Menininha quando dorme põe a mão no coração</q></p>
+
+</body>
+</html>
