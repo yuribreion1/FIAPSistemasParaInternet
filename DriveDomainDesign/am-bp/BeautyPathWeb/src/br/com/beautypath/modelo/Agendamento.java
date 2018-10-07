@@ -5,7 +5,7 @@ import java.util.Calendar;
 /**
  * 
  * @author YURIBreion
- * @version 1.0 Classe de agendamento de serviços
+ * @version 1.0 Classe de agendamento de serviï¿½os
  */
 
 public class Agendamento {
@@ -17,6 +17,15 @@ public class Agendamento {
 	private Profissional idProfissional;
 	private Catalogo idCatalogo;
 	private Cliente idCliente;
+	private Endereco idEndereco;
+
+	public Endereco getIdEndereco() {
+		return idEndereco;
+	}
+
+	public void setIdEndereco(Endereco idEndereco) {
+		this.idEndereco = idEndereco;
+	}
 
 	public Calendar getData() {
 		return data;
@@ -71,13 +80,14 @@ public class Agendamento {
 	}
 
 	public Agendamento(Calendar data, Calendar hora, String obs, int idAgendamento, Profissional idProfissional,
-			Catalogo idCatalogo, Cliente idCliente) {
+			Catalogo idCatalogo, Cliente idCliente, Endereco idEndereco) {
 		setData(data);
 		setHora(hora);
 		setObs(obs);
 		setIdProfissional(idProfissional);
 		setIdCatalogo(idCatalogo);
 		setIdCliente(idCliente);
+		setIdEndereco(idEndereco);
 	}
 
 	public Agendamento() {
@@ -89,14 +99,15 @@ public class Agendamento {
 				+ "\nCod. Cliente: " + idCliente + "\nCod. Catalogo: " + idCatalogo + "\nCod. Profissional: "
 				+ idProfissional;
 	}
-	
-	public void setAll(Calendar data, Calendar hora, String obs, Profissional idProfissional,
-			Catalogo idCatalogo, Cliente idCliente) {
+
+	public void setAll(Calendar data, Calendar hora, String obs, Profissional idProfissional, Catalogo idCatalogo,
+			Cliente idCliente, Endereco idEndereco) {
 		setData(data);
 		setHora(hora);
 		setObs(obs);
 		setIdProfissional(idProfissional);
 		setIdCatalogo(idCatalogo);
 		setIdCliente(idCliente);
+		setIdEndereco(idEndereco);
 	}
 }
