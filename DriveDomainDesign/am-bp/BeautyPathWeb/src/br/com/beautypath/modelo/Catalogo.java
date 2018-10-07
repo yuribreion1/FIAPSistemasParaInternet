@@ -8,8 +8,8 @@ public class Catalogo {
 		return idCatalogo;
 	}
 
-	public void setIdCatalogo(int idCatelogo) {
-		this.idCatalogo = idCatelogo;
+	public void setIdCatalogo(int idCatalogo) {
+		this.idCatalogo = idCatalogo;
 	}
 
 	public String getDescricao() {
@@ -17,16 +17,13 @@ public class Catalogo {
 	}
 
 	public void setDescricao(String descricao) {
-		if (descricao.length() > 100) {
-			this.descricao = descricao.substring(0, 100);
-		} else {
-			this.descricao = descricao;
-		}
+		this.descricao = descricao;
 	}
 
-	public Catalogo(int idCatelogo, String descricao) {
+	
+	public Catalogo(int idCatalogo, String descricao) {
 		super();
-		setIdCatalogo(idCatelogo);
+		setIdCatalogo(idCatalogo);
 		setDescricao(descricao);
 	}
 
@@ -38,9 +35,9 @@ public class Catalogo {
 		return "Cod. Catalogo: " + idCatalogo + "\nDescricao: " + descricao;
 	}
 
-	public void setAll(int idCatelogo, String descricao) {
+	public void setAll(int idCatalogo, String descricao) {
 
-		setIdCatalogo(idCatelogo);
+		setIdCatalogo(idCatalogo);
 		setDescricao(descricao);
 	}
 
