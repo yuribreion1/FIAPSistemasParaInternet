@@ -27,7 +27,7 @@ public final class ConnectionFactory {
 	}
 
 	public Connection getConnection(String user, String pw) throws Exception {
-		FileReader arquivo = new FileReader(System.getProperty("user.dir") + ("/banco.txt"));
+		FileReader arquivo = new FileReader(System.getProperty("user.dir") + ("/database.txt"));
 		BufferedReader dados = new BufferedReader(arquivo);
 		String url = dados.readLine();
 		if (url.indexOf("oracle") > 0) {
