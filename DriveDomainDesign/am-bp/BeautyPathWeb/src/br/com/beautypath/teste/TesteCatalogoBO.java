@@ -1,7 +1,8 @@
-package br.com.beautypath.bo;
+package br.com.beautypath.teste;
 
 import javax.swing.JOptionPane;
 
+import br.com.beautypath.bo.CatalogoBO;
 import br.com.beautypath.excecao.Excecao;
 import br.com.beautypath.modelo.Catalogo;
 
