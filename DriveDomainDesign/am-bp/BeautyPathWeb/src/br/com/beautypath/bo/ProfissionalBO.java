@@ -1,6 +1,7 @@
 package br.com.beautypath.bo;
 
 import java.sql.Connection;
+import java.util.List;
 
 import br.com.beautypath.dao.ConnectionFactory;
 import br.com.beautypath.dao.ProfissionalDAO;
@@ -9,11 +10,6 @@ import br.com.beautypath.modelo.Profissional;
 
 public class ProfissionalBO {
 	
-	public void cadastraProfissional(Profissional prof) throws Exception {
-		Connection c = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
-		erroProfissional(prof);
-		new ProfissionalDAO().gravar(prof, c);
-	}
 	
 	/**
 	 * @author yuribreion
@@ -22,6 +18,18 @@ public class ProfissionalBO {
 	 * @param prof
 	 * @throws Exception 
 	 */
+	
+	public void cadastraProfissional(Profissional prof) throws Exception {
+		Connection c = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		erroProfissional(prof);
+		new ProfissionalDAO().gravar(prof, c);
+	}
+	
+	public List<Profissional> listaProfissionais() throws Exception {
+		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		return new ProfissionalDAO().getProfissionais(conexao);
+	}
+
 
 	private void erroProfissional(Profissional prof) throws Exception {
 		if (prof.getNome().length() > 30) {

@@ -1,6 +1,7 @@
 package br.com.beautypath.bo;
 
 import java.sql.Connection;
+import java.util.List;
 
 import br.com.beautypath.dao.ConnectionFactory;
 import br.com.beautypath.dao.EnderecoDAO;
@@ -10,10 +11,16 @@ import br.com.beautypath.modelo.Endereco;
 public class EnderecoBO {
 
 	public void cadastraEndereco(Endereco end) throws Exception {
-		Connection c = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
 		erroEndereco(end);
-		new EnderecoDAO().gravar(end, c);
+		new EnderecoDAO().gravar(end, conexao);
 	}
+	
+	public List<Endereco> listaEnderecos() throws Exception {
+		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		return new EnderecoDAO().getEnderecos(conexao);
+	}
+
 
 	private void erroEndereco(Endereco end) throws Exception {
 		if (end.getLogradouro().length() > 80) {
