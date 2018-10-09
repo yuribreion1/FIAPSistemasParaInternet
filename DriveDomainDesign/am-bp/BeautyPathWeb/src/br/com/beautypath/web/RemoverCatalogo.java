@@ -21,6 +21,7 @@ public class RemoverCatalogo extends HttpServlet {
 	 * @param req	http request feito pelo servlet
 	 * @param res	http response feito pelo servlet
 	 */
+	
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

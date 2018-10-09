@@ -17,8 +17,7 @@ public class EnderecoDAO {
 	 * @param end			endereço
 	 * @param conexao		conexao com o banco
 	 * @exception sqlException
-	 * @return gravar 		endereco gravado no banco
-	 * @return apagar		apagar endereco do banco
+	 * @see Endereco
 	 */
 
 

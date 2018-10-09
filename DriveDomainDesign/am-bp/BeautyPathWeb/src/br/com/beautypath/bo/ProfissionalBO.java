@@ -8,11 +8,11 @@ import br.com.beautypath.dao.ProfissionalDAO;
 import br.com.beautypath.excecao.Excecao;
 import br.com.beautypath.modelo.Profissional;
 
-public class ProfissionalBO {
-	
+public class ProfissionalBO {	
 	
 	/**
 	 * @author yuribreion
+	 * @version 1.0
 	 * @see ProfissionalDAO
 	 * @see Profissional
 	 * @param prof

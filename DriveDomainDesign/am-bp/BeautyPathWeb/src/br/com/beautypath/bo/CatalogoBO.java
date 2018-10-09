@@ -12,6 +12,7 @@ public class CatalogoBO {
 	
 	/** 
 	 * @author yuribreion
+	 * @version 1.0
 	 * @see CatalogoDAO
 	 * @see Catalogo
 	 * @param cat

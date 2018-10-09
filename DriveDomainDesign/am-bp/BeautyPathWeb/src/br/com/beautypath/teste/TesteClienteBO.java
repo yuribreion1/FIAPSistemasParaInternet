@@ -14,7 +14,7 @@ public class TesteClienteBO {
 	 * @author yuribreion
 	 * @param cli
 	 * @see ClienteBO
-	 * @exception getErro()
+	 * @see Cliente
 	 * @throws Exception
 	 */
 

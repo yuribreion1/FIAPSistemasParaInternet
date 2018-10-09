@@ -20,9 +20,11 @@ public class CadastraCatalogo extends HttpServlet {
 	/**
 	 * @author yuribreion
 	 * @version 1.0
-	 * @param req http request feito pelo servlet
-	 * @param res http response feito pelo servlet
+	 * @serial 1l
+	 * @see Catalogo
+	 * @see CatalogoDAO
 	 */
+	
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

@@ -19,8 +19,12 @@ import br.com.beautypath.modelo.Endereco;
 public class ListaEndereco extends HttpServlet {
 
 	/**
-	 * 
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param req http request feito pelo servlet
+	 * @param res http response feito pelo servlet
 	 */
+	
 	private static final long serialVersionUID = 1L;
 	
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

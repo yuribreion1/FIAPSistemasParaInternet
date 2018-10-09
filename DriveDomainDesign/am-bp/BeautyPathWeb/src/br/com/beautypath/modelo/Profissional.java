@@ -1,6 +1,12 @@
 package br.com.beautypath.modelo;
 
 public class Profissional {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 */
+	
 	private int idProfissional;
 	private String nome;
 	private String telefone;

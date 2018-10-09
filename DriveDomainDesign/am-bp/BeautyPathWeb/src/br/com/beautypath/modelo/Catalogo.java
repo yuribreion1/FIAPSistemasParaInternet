@@ -1,6 +1,12 @@
 package br.com.beautypath.modelo;
 
 public class Catalogo {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 */
+	
 	private int idCatalogo;
 	private String descricao;
 

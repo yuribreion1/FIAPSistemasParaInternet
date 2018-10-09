@@ -13,9 +13,11 @@ public class ClienteBO {
 	
 	/**
 	 * @author yuribreion
+	 * @version 1.0
 	 * @param cli
 	 * @throws Exception
 	 * @see ClienteDAO
+	 * @see Cliente
 	 */
 
 	public void cadastraCliente(Cliente cli) throws Exception{

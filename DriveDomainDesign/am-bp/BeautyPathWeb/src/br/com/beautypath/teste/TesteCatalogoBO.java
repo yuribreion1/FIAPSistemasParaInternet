@@ -9,6 +9,15 @@ import br.com.beautypath.excecao.Excecao;
 import br.com.beautypath.modelo.Catalogo;
 
 public class TesteCatalogoBO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param args
+	 * @throws Exception
+	 * @see Catalogo
+	 * @see CatalogoDAO
+	 */
 
 	public static void main(String[] args) throws Exception {
 		try {

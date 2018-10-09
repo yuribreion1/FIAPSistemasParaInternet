@@ -9,6 +9,14 @@ import br.com.beautypath.excecao.Excecao;
 import br.com.beautypath.modelo.Profissional;
 
 public class TesteProfissionalBO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param args
+	 * @throws Exception
+	 */
+	
 	public static void main(String[] args) throws Exception {
 		try {
 			ProfissionalBO bo = new ProfissionalBO();

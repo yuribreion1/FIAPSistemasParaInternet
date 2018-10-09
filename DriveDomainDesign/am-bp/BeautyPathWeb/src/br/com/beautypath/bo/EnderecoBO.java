@@ -9,6 +9,15 @@ import br.com.beautypath.excecao.Excecao;
 import br.com.beautypath.modelo.Endereco;
 
 public class EnderecoBO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param end
+	 * @throws Exception
+	 * @see Endereco
+	 * @see EnderecoDAO
+	 */
 
 	public void cadastraEndereco(Endereco end) throws Exception {
 		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");

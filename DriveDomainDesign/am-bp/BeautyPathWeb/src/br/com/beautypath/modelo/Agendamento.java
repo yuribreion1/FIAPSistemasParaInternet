@@ -3,9 +3,9 @@ package br.com.beautypath.modelo;
 import java.util.Calendar;
 
 /**
- * 
- * @author YURIBreion
- * @version 1.0 Classe de agendamento de servi�os
+ * @author yuribreion
+ * @version 1.0
+ *
  */
 
 public class Agendamento {
