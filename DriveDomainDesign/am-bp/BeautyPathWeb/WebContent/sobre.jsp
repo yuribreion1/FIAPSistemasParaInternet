@@ -24,39 +24,42 @@
 <body class="container">
 	<h1 class="display-4">PAON - Sobre nós</h1>
 	<hr>
-	<ul class="nav nav-pills">
+		<ul class="nav nav-pills">
 		<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 			data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
 			aria-expanded="false">Cadastros</a>
 			<div class="dropdown-menu">
-				<a class="dropdown-item" href="insereEndereco.jsp">Endereço</a> <a
-					class="dropdown-item" href="insereCliente.jsp">Cliente</a> <a
-					class="dropdown-item" href="insereCatalogo.jsp">Catalogo</a> <a
-					class="dropdown-item" href="insereProfissional.jsp">Profissional</a>
+				<a class="dropdown-item" href="insereEndereco.jsp">Endereço</a> 
+				<a class="dropdown-item" href="insereCliente.jsp">Cliente</a> 
+				<a class="dropdown-item" href="insereCatalogo.jsp">Catalogo</a>
+				<a class="dropdown-item" href="insereProfissional.jsp">Profissional</a>
 				<!-- <div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Separated link</a> -->
 			</div></li>
-		<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 			data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
 			aria-expanded="false">Listagem</a>
 			<div class="dropdown-menu">
-				<a class="dropdown-item" href="listaClientes.jsp">Clientes</a>
+				<a class="dropdown-item" href="listaCatalogo.jsp">Catalogo</a>
+				<a class="dropdown-item" href="listaEndereco.jsp">Endereço</a> 
+				<a class="dropdown-item" href="listaCliente.jsp">Cliente</a>
+				<a class="dropdown-item" href="listaProfissional.jsp">Profissional</a>  
 				<!-- <div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Separated link</a> -->
 			</div></li>
-		<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 			data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
 			aria-expanded="false">Remoção</a>
 			<div class="dropdown-menu">
-				<a class="dropdown-item" href="removerEndereco.jsp">Endereço</a> <a
-					class="dropdown-item" href="removerCliente.jsp">Cliente</a> <a
-					class="dropdown-item" href="removerCatalogo.jsp">Catalogo</a> <a
-					class="dropdown-item" href="removerProfissional.jsp">Profissional</a>
+				<a class="dropdown-item" href="removerEndereco.jsp">Endereço</a> 
+				<a class="dropdown-item" href="removerCliente.jsp">Cliente</a> 
+				<a class="dropdown-item" href="removerCatalogo.jsp">Catalogo</a>
+				<a class="dropdown-item" href="removerProfissional.jsp">Profissional</a>
 				<!-- <div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Separated link</a> -->
 			</div></li>
-
-		<li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+			
+		<li class="nav-item"><a class="nav-link" href="sobre.jsp">Sobre</a></li>
 		<li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
 	</ul>
 

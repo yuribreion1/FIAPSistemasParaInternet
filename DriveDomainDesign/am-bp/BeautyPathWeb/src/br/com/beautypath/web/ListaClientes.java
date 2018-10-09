@@ -21,24 +21,23 @@ public class ListaClientes extends HttpServlet {
 	/**
 	 * @author yuribreion
 	 * @version 1.0
-	 * @param req	http request feito pelo servlet
-	 * @param res	http response feito pelo servlet
+	 * @param req http request feito pelo servlet
+	 * @param res http response feito pelo servlet
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		Connection conexao;
 		try {
 			conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
 			List<Cliente> clientes = new ClienteDAO().getClientes(conexao);
 			req.setAttribute("clientes", clientes);
-			
-			
+
 			RequestDispatcher dispatcher = req.getRequestDispatcher("listaCliente.jsp");
 			dispatcher.forward(req, res);
-			
+
 			conexao.close();
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
