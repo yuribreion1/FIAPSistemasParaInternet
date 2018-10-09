@@ -1,3 +1,4 @@
+
 package br.com.beautypath.web;
 
 import java.io.IOException;
@@ -39,9 +40,8 @@ public class CadastraCatalogo extends HttpServlet {
 			cat.setDescricao(req.getParameter("descricao"));
 
 			dao.gravar(cat, conexao);
-			res.sendRedirect("index.jsp");
-
 			conexao.close();
+			res.sendRedirect("index.jsp");
 
 		} catch (Exception e) {
 			e.printStackTrace();

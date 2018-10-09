@@ -39,9 +39,8 @@ public class CadastraEndereco extends HttpServlet {
 			end.setCep(req.getParameter("cep"));
 
 			dao.gravar(end, conexao);
-			res.sendRedirect("index.jsp");
-			
 			conexao.close();
+			res.sendRedirect("index.jsp");
 
 		} catch (Exception e) {
 			e.printStackTrace();

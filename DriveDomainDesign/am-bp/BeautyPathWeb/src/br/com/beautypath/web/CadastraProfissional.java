@@ -38,10 +38,8 @@ public class CadastraProfissional extends HttpServlet {
 			prof.setSocialUrl1(req.getParameter("socialUrl1"));
 
 			dao.gravar(prof, conexao);
-			System.out.println("Profissional cadastrado com sucesso");
-			res.sendRedirect("index.jsp");
-			
 			conexao.close();
+			res.sendRedirect("index.jsp");
 			
 		} catch (Exception e) {
 			e.printStackTrace();

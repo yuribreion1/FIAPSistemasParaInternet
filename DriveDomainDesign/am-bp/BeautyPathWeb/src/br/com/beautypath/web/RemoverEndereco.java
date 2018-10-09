@@ -18,30 +18,27 @@ public class RemoverEndereco extends HttpServlet {
 	/**
 	 * @author yuribreion
 	 * @version 1.0
-	 * @param req	http request feito pelo servlet
-	 * @param res	http response feito pelo servlet
+	 * @param req http request feito pelo servlet
+	 * @param res http response feito pelo servlet
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		
+
 		int end = Integer.parseInt(req.getParameter("codigo"));
 		Connection conexao;
-		
+
 		try {
 			conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
 			EnderecoDAO dao = new EnderecoDAO();
-			
+
 			dao.apagar(end, conexao);
-			res.sendRedirect("index.jsp");
-			
 			conexao.close();
-			
-			
+			res.sendRedirect("index.jsp");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	
 }
