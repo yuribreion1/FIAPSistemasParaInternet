@@ -1,6 +1,7 @@
 package br.com.beautypath.bo;
 
 import java.sql.Connection;
+import java.util.List;
 
 import br.com.beautypath.dao.CatalogoDAO;
 import br.com.beautypath.dao.ConnectionFactory;
@@ -21,6 +22,11 @@ public class CatalogoBO {
 		Connection c = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
 		erroCatalogo(cat);
 		new CatalogoDAO().gravar(cat, c);
+	}
+	
+	public List<Catalogo> listaCatalogos() throws Exception {
+		Connection c = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		return new CatalogoDAO().getCatalogos(c);
 	}
 	
 	private void erroCatalogo(Catalogo cat) throws Exception {

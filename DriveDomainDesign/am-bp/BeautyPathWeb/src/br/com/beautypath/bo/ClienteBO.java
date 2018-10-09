@@ -1,6 +1,7 @@
 package br.com.beautypath.bo;
 
 import java.sql.Connection;
+import java.util.List;
 
 import br.com.beautypath.dao.ClienteDAO;
 import br.com.beautypath.dao.ConnectionFactory;
@@ -17,9 +18,14 @@ public class ClienteBO {
 	 */
 
 	public void cadastraCliente(Cliente cli) throws Exception{
-		Connection c = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
 		erroCliente(cli);
-		new ClienteDAO().gravar(cli, c);
+		new ClienteDAO().gravar(cli, conexao);
+	}
+	
+	public List<Cliente> listaClientes() throws Exception {
+		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		return new ClienteDAO().getClientes(conexao);
 	}
 	
 	private void erroCliente(Cliente cli)  throws Exception{
@@ -29,7 +35,7 @@ public class ClienteBO {
 			throw Excecao.getErro(new Exception("O campo telefone deve ter no máximo 16 caracteres "));
 		} else if (cli.getEmail().length() > 50) {
 			throw Excecao.getErro(new Exception("O campo email deve ter no máximo 60 caracteres"));
-		} else if (!cli.getEmail().contains("@") && !cli.getEmail().contains(".") && cli.getEmail().length() > 50) {
+		} else if (!cli.getEmail().contains("@")) {
 			throw Excecao.getErro(new Exception("E-mail incorreto"));
 		}
 	}
