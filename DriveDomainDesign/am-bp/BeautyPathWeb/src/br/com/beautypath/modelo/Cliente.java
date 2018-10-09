@@ -73,5 +73,10 @@ public class Cliente {
 		setEmail(email);
 		setSocialUrl(socialUrl);
 	}
+	
+	public String toString() {
+		return "Cod. Cliente: " + idCliente + "\nNome: " + nome + "\nTelefone: " + telefone + "\nE-mail: " + email
+				+ "\nSocial URL: " + socialUrl;
+	}
 
 }

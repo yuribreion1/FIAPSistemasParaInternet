@@ -1,6 +1,7 @@
 package br.com.beautypath.bo;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
 import br.com.beautypath.dao.ClienteDAO;
@@ -27,6 +28,15 @@ public class ClienteBO {
 		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
 		return new ClienteDAO().getClientes(conexao);
 	}
+	
+	public List<Cliente> getPesquisaClientePorNome(String strSearch) throws Exception {
+		Connection conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
+		if (strSearch.equals(null) || strSearch.length() > 40) {
+			return new ArrayList<Cliente>();
+		}
+		ClienteDAO dao = new ClienteDAO();
+		return dao.getPesquisaClientePorNome(strSearch, conexao);
+}
 	
 	private void erroCliente(Cliente cli)  throws Exception{
 		if (cli.getNome().length() > 30) {

@@ -25,10 +25,10 @@ public class TesteClienteBO {
 
 			do {
 
-				cli.setNome(JOptionPane.showInputDialog("Digite o nome: "));
-				cli.setTelefone(JOptionPane.showInputDialog("Digite o telefone:"));
-				cli.setEmail(JOptionPane.showInputDialog("Digite o e-mail"));
-				cli.setSocialUrl(JOptionPane.showInputDialog("Digite a rede social:"));
+				cli.setNome(JOptionPane.showInputDialog("Digite o nome: ").toUpperCase());
+				cli.setTelefone(JOptionPane.showInputDialog("Digite o telefone:").toUpperCase());
+				cli.setEmail(JOptionPane.showInputDialog("Digite o e-mail").toUpperCase());
+				cli.setSocialUrl(JOptionPane.showInputDialog("Digite a rede social:").toUpperCase());
 
 				bo.cadastraCliente(cli);
 
@@ -41,9 +41,17 @@ public class TesteClienteBO {
 							+ cliente.getTelefone() + "\nE-mail: " + cliente.getEmail() + "\nRede social: "
 							+ cliente.getSocialUrl() + "\n==============\n");
 				}
+				String strSearch = JOptionPane.showInputDialog("Digite o nome que deseja buscar: ").toUpperCase();
+
+				List<Cliente> clienteRetornado = bo.getPesquisaClientePorNome(strSearch);
+
+				for (Cliente cliente : clienteRetornado) {
+					System.out.println("Cliente retornado da busca:\n " + cliente + "\n");
+				}
 
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw Excecao.getErro(e);
 		}
 	}
