@@ -44,7 +44,7 @@ public class EnderecoDAO {
 	}
 	
 	public List<Endereco> getEnderecos(Connection conexao) throws Exception {
-		String sql = "SELECT COD_END, LOGRADOURO, CIDADE, CEP, ESTADO FROM ENDERECO";
+		String sql = "SELECT COD_END, LOGRADOURO, CIDADE, CEP, ESTADO FROM ENDERECO ORDER BY 1 ASC";
 		List<Endereco> listaEnderecos = new ArrayList<Endereco>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();

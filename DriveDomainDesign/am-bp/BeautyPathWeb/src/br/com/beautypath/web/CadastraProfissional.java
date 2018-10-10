@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.beautypath.bo.ProfissionalBO;
 import br.com.beautypath.dao.ConnectionFactory;
-import br.com.beautypath.dao.ProfissionalDAO;
 import br.com.beautypath.modelo.Profissional;
 
 @WebServlet(urlPatterns = "/cadastra-profissional")
@@ -29,7 +29,7 @@ public class CadastraProfissional extends HttpServlet {
 		Connection conexao;
 		try {
 			conexao = ConnectionFactory.controlarInstancia().getConnection("rm79935", "300187");
-			ProfissionalDAO dao = new ProfissionalDAO();
+			ProfissionalBO bo = new ProfissionalBO();
 
 			prof.setNome(req.getParameter("nome"));
 			prof.setTelefone(req.getParameter("telefone"));
@@ -37,7 +37,7 @@ public class CadastraProfissional extends HttpServlet {
 			prof.setSocialUrl(req.getParameter("socialUrl"));
 			prof.setSocialUrl1(req.getParameter("socialUrl1"));
 
-			dao.gravar(prof, conexao);
+			bo.cadastraProfissional(prof);
 			conexao.close();
 			res.sendRedirect("index.jsp");
 			
