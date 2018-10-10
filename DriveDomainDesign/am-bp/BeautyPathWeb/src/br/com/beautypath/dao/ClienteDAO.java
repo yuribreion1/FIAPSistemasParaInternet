@@ -52,7 +52,7 @@ public class ClienteDAO {
 	}
 
 	public List<Cliente> getClientes(Connection conexao) throws SQLException {
-		String sql = "SELECT COD_CLI, NOME_CLI, TEL_CLI, EMAIL_CLI, SOCIAL_URL_CLI FROM CLIENTE";
+		String sql = "SELECT COD_CLI, NOME_CLI, TEL_CLI, EMAIL_CLI, SOCIAL_URL_CLI FROM CLIENTE ORDER BY 1 ASC";
 		List<Cliente> listaClientes = new ArrayList<Cliente>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();

@@ -46,7 +46,7 @@ public class ProfissionalDAO {
 	}
 	
 	public List<Profissional> getProfissionais(Connection conexao) throws Exception {
-		String sql = "SELECT COD_PROF, NOME_PROF, TEL_PROF, REG_PROF, SOCIAL_URL_1_PROF, SOCIAL_URL_2_PROF FROM RM79935.PROFISSIONAL";
+		String sql = "SELECT COD_PROF, NOME_PROF, TEL_PROF, REG_PROF, SOCIAL_URL_1_PROF, SOCIAL_URL_2_PROF FROM RM79935.PROFISSIONAL ORDER BY 1 ASC";
 		List<Profissional> listaProfissionals = new ArrayList<Profissional>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();

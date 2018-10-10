@@ -41,7 +41,7 @@ public class CatalogoDAO {
 	}
 
 	public List<Catalogo> getCatalogos(Connection conexao) throws Exception {
-		String sql = "SELECT COD_CAT, DESC_CAT FROM RM79935.CATALOGO";
+		String sql = "SELECT COD_CAT, DESC_CAT FROM RM79935.CATALOGO ORDER BY 1 ASC";
 		List<Catalogo> listaCatalogos = new ArrayList<Catalogo>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();
