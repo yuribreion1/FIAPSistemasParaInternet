@@ -52,7 +52,7 @@ public class ClienteDAO {
 	}
 
 	public List<Cliente> getClientes(Connection conexao) throws SQLException {
-		String sql = "select * from rm79935.cliente order by 1 asc";
+		String sql = "SELECT COD_CLI, NOME_CLI, TEL_CLI, EMAIL_CLI, SOCIAL_URL_CLI FROM CLIENTE";
 		List<Cliente> listaClientes = new ArrayList<Cliente>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();
@@ -73,7 +73,7 @@ public class ClienteDAO {
 	// SELECT * FROM RM79935.CLIENTE WHERE NOME LIKE ?
 
 	public List<Cliente> getPesquisaClientePorNome(String nomeCliente, Connection conexao) throws SQLException {
-		String sql = "SELECT * FROM RM79935.CLIENTE WHERE NOME_CLI LIKE ?";
+		String sql = "SELECT COD_CLI, NOME_CLI, TEL_CLI, EMAIL_CLI, SOCIAL_URL_CLI FROM CLIENTE WHERE NOME_CLI LIKE ?";
 		List<Cliente> listaClientes = new ArrayList<Cliente>();
 		ps = conexao.prepareStatement(sql);
 		ps.setString(1, "%" + nomeCliente + "%");
