@@ -33,9 +33,9 @@ public class ProfissionalBO {
 
 	private void erroProfissional(Profissional prof) throws Exception {
 		if (prof.getNome().length() > 30) {
-			throw Excecao.getErro(new Exception("O nome não pode ter mais de 30 caracteres"));
+			throw Excecao.getErro(new Exception("O nome nao pode ter mais de 30 caracteres"));
 		} else if (prof.getTelefone().length() > 16) {
-			throw Excecao.getErro(new Exception("O telefone não deve ter mais de 16 caracteres"));
+			throw Excecao.getErro(new Exception("O telefone nao deve ter mais de 16 caracteres"));
 		}
 		
 	}

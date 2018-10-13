@@ -33,9 +33,9 @@ public class EnderecoBO {
 
 	private void erroEndereco(Endereco end) throws Exception {
 		if (end.getLogradouro().length() > 80) {
-			throw Excecao.getErro(new Exception("Endereço não pode ter mais de 80 caracteres"));
+			throw Excecao.getErro(new Exception("Endereco nao pode ter mais de 80 caracteres"));
 		} else if (end.getCidade().length() > 50) {
-			throw Excecao.getErro(new Exception("A cidade não pode ter mais de 50 caracteres"));
+			throw Excecao.getErro(new Exception("A cidade nao pode ter mais de 50 caracteres"));
 		}
 	}
 }

@@ -25,7 +25,7 @@ public class TesteCatalogoBO {
 			Catalogo cat = new Catalogo();
 			do {
 
-				cat.setDescricao(JOptionPane.showInputDialog("Entre com uma descrição:"));
+				cat.setDescricao(JOptionPane.showInputDialog("Entre com uma descricao:"));
 
 				bo.cadastraCatalogo(cat);
 			} while (JOptionPane.showConfirmDialog(null, "Deseja continuar", "Teste Catalogo",
@@ -34,7 +34,7 @@ public class TesteCatalogoBO {
 				List<Catalogo> catalogos = bo.listaCatalogos();
 				for (Catalogo catalogo : catalogos) {
 					System.out.println(
-							"ID: " + catalogo.getIdCatalogo() + "\nDescrição: " + catalogo.getDescricao() + "\n");
+							"ID: " + catalogo.getIdCatalogo() + "\nDescricao: " + catalogo.getDescricao() + "\n");
 				}
 			}
 

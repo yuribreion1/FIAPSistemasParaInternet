@@ -42,11 +42,11 @@ public class ClienteBO {
 	
 	private void erroCliente(Cliente cli)  throws Exception{
 		if (cli.getNome().length() > 30) {
-			throw Excecao.getErro(new Exception("O nome do cliente deve ter no máximo 30 caracteres"));
+			throw Excecao.getErro(new Exception("O nome do cliente deve ter no maximo 30 caracteres"));
 		} else if (cli.getTelefone().length() > 16) {
-			throw Excecao.getErro(new Exception("O campo telefone deve ter no máximo 16 caracteres "));
+			throw Excecao.getErro(new Exception("O campo telefone deve ter no maximo 16 caracteres "));
 		} else if (cli.getEmail().length() > 50) {
-			throw Excecao.getErro(new Exception("O campo email deve ter no máximo 60 caracteres"));
+			throw Excecao.getErro(new Exception("O campo email deve ter no maximo 60 caracteres"));
 		} else if (!cli.getEmail().contains("@")) {
 			throw Excecao.getErro(new Exception("E-mail incorreto"));
 		}

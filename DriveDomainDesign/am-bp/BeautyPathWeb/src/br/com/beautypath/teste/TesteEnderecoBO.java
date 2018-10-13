@@ -22,7 +22,7 @@ public class TesteEnderecoBO {
 			EnderecoBO bo = new EnderecoBO();
 			Endereco end = new Endereco();
 			do {
-				end.setLogradouro(JOptionPane.showInputDialog("Digite o endereço:"));
+				end.setLogradouro(JOptionPane.showInputDialog("Digite o endereco:"));
 				end.setCidade(JOptionPane.showInputDialog("Digite a cidade:"));
 				end.setCep(JOptionPane.showInputDialog("Digite o CEP:"));
 				end.setEstado(JOptionPane.showInputDialog("Digite o estado:"));

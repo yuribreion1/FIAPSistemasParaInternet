@@ -34,8 +34,6 @@ public class ListaEndereco extends HttpServlet {
 			List<Endereco> enderecos = new EnderecoDAO().getEnderecos(conexao);
 			req.setAttribute("enderecos", enderecos);
 			
-			System.out.println(enderecos);
-			
 			RequestDispatcher dispatcher = req.getRequestDispatcher("listaEndereco.jsp");
 			dispatcher.forward(req, res);
 			

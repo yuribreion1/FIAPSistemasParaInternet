@@ -32,7 +32,7 @@ public class CatalogoBO {
 	
 	private void erroCatalogo(Catalogo cat) throws Exception {
 		if (cat.getDescricao().length() > 100) {
-			throw Excecao.getErro(new Exception("Campo não pode ter mais de 100 caracteres"));
+			throw Excecao.getErro(new Exception("Campo nao pode ter mais de 100 caracteres"));
 		}
 	}
 
