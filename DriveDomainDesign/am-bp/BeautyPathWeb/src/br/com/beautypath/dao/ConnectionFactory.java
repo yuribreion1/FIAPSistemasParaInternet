@@ -24,6 +24,7 @@ public final class ConnectionFactory {
 	}
 
 	public Connection getConnection(String user, String pw) throws Exception {
+		Class.forName ("oracle.jdbc.OracleDriver");
 		String url = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
 		return DriverManager.getConnection(url, user, pw);
 	}
