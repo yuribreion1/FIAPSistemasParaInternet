@@ -1,5 +1,3 @@
-/* Colocar todas as colunas na instrução do select */
-
 -- Agendamento
 
 insert into rm79935.agendamento(COD_AGD, DATA_AGD, HORA_AGD, COD_CLI, COD_PROF, OBS, COD_END) values (SEQ_AGENDAMENTO.NEXTVAL, ?, ?, ?, ?, ?, ? );
