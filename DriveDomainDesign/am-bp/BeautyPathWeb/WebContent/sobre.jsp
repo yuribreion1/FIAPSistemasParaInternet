@@ -64,11 +64,13 @@
 	</ul>
 
 	<blockquote class="blockquote">
-			<p class="mb-0">Lorem ipsum dolor sit amet, consectetur
-				adipiscing elit. Integer posuere erat a ante.</p>
-			<footer class="blockquote-footer">
-				Someone famous in <cite title="Source Title">Source Title</cite>
-			</footer>
+			<p class="mb-0">
+				A proposta da Beauty Path é propor aos clientes um acesso mais direto aos profissionais, seja por localidade ou referência. 
+			</p>
+			<p class="mb-0">
+				A cultura da nova geração que já é digital não vê vínculos fortes somente com locais, mas sim com boas experiencias e marcas, uma vez que a cliente possa ser bem atendida em sua própria casa por exemplo, gera um forte vínculo com a facilidade e a acessibilidade que a BP propõe.
+			</p>
+			
 		</blockquote>
 
 </body>
