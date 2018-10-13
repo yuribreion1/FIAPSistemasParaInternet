@@ -1,6 +1,11 @@
 package br.com.beautypath.modelo;
 
 public class Cliente {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 */
 
 	private int idCliente;
 	private String nome;
@@ -21,11 +26,7 @@ public class Cliente {
 	}
 
 	public void setNome(String nome) {
-		if (nome.length() > 30) {
-			this.nome = nome.substring(0, 30);
-		} else {
-			this.nome = nome.toUpperCase();
-		}
+		this.nome = nome;
 	}
 
 	public String getTelefone() {
@@ -33,11 +34,7 @@ public class Cliente {
 	}
 
 	public void setTelefone(String telefone) {
-		if (telefone.length() > 16) {
-			this.telefone = telefone.substring(0, 16);
-		} else {
-			this.telefone = telefone;
-		}
+		this.telefone = telefone;
 	}
 
 	public String getEmail() {
@@ -45,11 +42,7 @@ public class Cliente {
 	}
 
 	public void setEmail(String email) {
-		if (!email.contains("@") && !email.contains(".") && email.length() > 50) {
-			this.email = "erro@fiap.com.br";
-		} else {
-			this.email = email.toLowerCase();
-		}
+		this.email = email;
 	}
 
 	public String getSocialUrl() {
@@ -57,11 +50,7 @@ public class Cliente {
 	}
 
 	public void setSocialUrl(String socialUrl) {
-		if (socialUrl.length() > 80) {
-			this.socialUrl = socialUrl.substring(0, 80);
-		} else {
-			this.socialUrl = socialUrl;
-		}
+		this.socialUrl = socialUrl;
 	}
 
 	public Cliente(int idCliente, String nome, String telefone, String email, String socialUrl) {
@@ -88,6 +77,11 @@ public class Cliente {
 		setTelefone(telefone);
 		setEmail(email);
 		setSocialUrl(socialUrl);
+	}
+	
+	public String toString() {
+		return "Cod. Cliente: " + idCliente + "\nNome: " + nome + "\nTelefone: " + telefone + "\nE-mail: " + email
+				+ "\nSocial URL: " + socialUrl;
 	}
 
 }

@@ -1,15 +1,21 @@
 package br.com.beautypath.modelo;
 
 public class Catalogo {
-	private int idCatelogo;
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 */
+	
+	private int idCatalogo;
 	private String descricao;
 
-	public int getIdCatelogo() {
-		return idCatelogo;
+	public int getIdCatalogo() {
+		return idCatalogo;
 	}
 
-	public void setIdCatelogo(int idCatelogo) {
-		this.idCatelogo = idCatelogo;
+	public void setIdCatalogo(int idCatalogo) {
+		this.idCatalogo = idCatalogo;
 	}
 
 	public String getDescricao() {
@@ -17,16 +23,13 @@ public class Catalogo {
 	}
 
 	public void setDescricao(String descricao) {
-		if (descricao.length() > 100) {
-			this.descricao = descricao.substring(0, 100);
-		} else {
-			this.descricao = descricao;
-		}
+		this.descricao = descricao;
 	}
 
-	public Catalogo(int idCatelogo, String descricao) {
+	
+	public Catalogo(int idCatalogo, String descricao) {
 		super();
-		setIdCatelogo(idCatelogo);
+		setIdCatalogo(idCatalogo);
 		setDescricao(descricao);
 	}
 
@@ -35,12 +38,12 @@ public class Catalogo {
 	}
 
 	public String getAll() {
-		return "Cod. Catalogo: " + idCatelogo + "\nDescricao: " + descricao;
+		return "Cod. Catalogo: " + idCatalogo + "\nDescricao: " + descricao;
 	}
 
-	public void setAll(int idCatelogo, String descricao) {
+	public void setAll(int idCatalogo, String descricao) {
 
-		setIdCatelogo(idCatelogo);
+		setIdCatalogo(idCatalogo);
 		setDescricao(descricao);
 	}
 

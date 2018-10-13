@@ -1,6 +1,11 @@
 package br.com.beautypath.modelo;
 
 public class Servico {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 */
 
 	private int idServico;
 	private int quantidade;

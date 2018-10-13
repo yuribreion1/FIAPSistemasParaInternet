@@ -1,11 +1,18 @@
 package br.com.beautypath.dao;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public final class ConnectionFactory {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param url
+	 * @param user			usuário de conexao
+	 * @param password		senha de acesso
+	 * @exception sqlException
+	 */
 
 	private static ConnectionFactory conexao = null;
 
@@ -17,15 +24,7 @@ public final class ConnectionFactory {
 	}
 
 	public Connection getConnection(String user, String pw) throws Exception {
-		FileReader arquivo = new FileReader(System.getProperty("user.dir") + ("/banco.txt"));
-		BufferedReader dados = new BufferedReader(arquivo);
-		String url = dados.readLine();
-		if (url.indexOf("oracle") > 0) {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-		} else {
-			System.out.println("Erro ao achar o driver");
-		}
-		dados.close();
+		String url = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
 		return DriverManager.getConnection(url, user, pw);
 	}
 }

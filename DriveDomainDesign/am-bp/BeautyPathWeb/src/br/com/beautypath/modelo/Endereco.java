@@ -1,6 +1,11 @@
 package br.com.beautypath.modelo;
 
 public class Endereco {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 */
 
 	private int idEndereco;
 	private String logradouro;

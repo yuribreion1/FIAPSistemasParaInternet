@@ -10,6 +10,16 @@ import java.util.List;
 import br.com.beautypath.modelo.Catalogo;
 
 public class CatalogoDAO {
+	
+	/**
+	 * @author yuribreion
+	 * @version 1.0
+	 * @param cat			catalogo
+	 * @param conexao		conexao com o banco
+	 * @exception sqlException
+	 * @return gravar 		catalogo gravado no banco
+	 * @return apagar		apagar catalogo do banco
+	 */
 
 	private PreparedStatement ps;
 	private ResultSet rs;
@@ -31,13 +41,13 @@ public class CatalogoDAO {
 	}
 
 	public List<Catalogo> getCatalogos(Connection conexao) throws Exception {
-		String sql = "select * from rm79935.catalogo";
+		String sql = "SELECT COD_CAT, DESC_CAT FROM RM79935.CATALOGO ORDER BY 1 ASC";
 		List<Catalogo> listaCatalogos = new ArrayList<Catalogo>();
 		ps = conexao.prepareStatement(sql);
 		rs = ps.executeQuery();
 		while (rs.next()) {
 			Catalogo cat = new Catalogo();
-			cat.setIdCatelogo(rs.getInt("COD_CAT"));
+			cat.setIdCatalogo(rs.getInt("COD_CAT"));
 			cat.setDescricao(rs.getString("DESC_CAT"));
 			listaCatalogos.add(cat);
 		}

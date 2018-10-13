@@ -1,0 +1,2 @@
+1 - Executar classe TesteEnderecoBO, onde tem a funcionalidade de cadastrar um endereço e listar todos em seguir.
+2 - Executar classe TesteClienteBO, onde tem a funcionalidade de cadastrar um cliente, listar todos e também fazer a busca por nome. 

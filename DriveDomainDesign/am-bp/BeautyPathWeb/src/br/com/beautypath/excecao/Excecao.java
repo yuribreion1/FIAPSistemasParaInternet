@@ -3,33 +3,35 @@ package br.com.beautypath.excecao;
 public class Excecao extends Exception{
 	
 	/**
-	 * 
+	 * @author yuribreion
+	 * @return Exception
+	 * @param msg
+	 * @param Exception e
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	private String msg;
+	
+	public Excecao(String msg) {
+		super(msg);
+		this.msg = msg;
+	}
+	
 
-	public Excecao(Exception e) {
+	public static Exception getErro(Exception e) {
 		if (e.getClass().getName().equals("java.lang.NumberFormatException")) {
-			System.out.println("Erro de preenchimento\n");
+			return new Exception("Erro de preenchimento, campo deve ser numérico\n");
 		} else if (e.getClass().getName().equals("java.sql.SQLSyntaxErrorException")) {
-			System.out.println("Erro na sintaxe do script sql");
+			return new Exception("Erro na sintaxe do script sql");
 		} else if (e.getClass().getName().equals("java.io.FileNotFoundException")) {
-			System.out.println("Erro no carregamento do arquivo");
+			return new Exception("Erro no carregamento do arquivo");
+		} else if (e.getClass().getName().equals("java.sql.SQLIntegrityConstraintViolationException")) {
+			return new Exception("Antes de inserir um registro para esta funcionálidade, inserir seus dependentes");
+		} else if (e.getClass().getName().equals("java.sql.SQLRecoverableException")) {
+			return new Exception("Banco de dados não esta respondendo");
+		}else {
+			return new Exception(e.getMessage());
 		}
 	}
-
-	public Excecao(String string) {
-	}
-
-	public static String getErro(Exception e) {
-		if (e.getClass().getName().equals("java.lang.NumberFormatException")) {
-			return "Erro de preenchimento\n";
-		} else if (e.getClass().getName().equals("java.sql.SQLSyntaxErrorException")) {
-			System.out.println("Erro na sintaxe do script sql");
-		} else if (e.getClass().getName().equals("java.io.FileNotFoundException")) {
-			System.out.println("Erro no carregamento do arquivo");
-		} else {
-			return "Erro ainda nao mapeado";
-		}
-		return "Houve um erro";
-	}
+		
 }
