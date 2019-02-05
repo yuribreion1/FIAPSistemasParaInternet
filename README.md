@@ -24,3 +24,10 @@ Repositório criado para compartilhar a códificação usada nas aulas
 - Network Architecture - João Gilberto Pinho
 
 - User Experience and Toolkit Images - Thais Campas
+
+## Segundo ano:
+
+- Desenvolvimento Mobile Android - Douglas Carvalho Cabral
+- Digital Experience Plataform - Gustavo Torrente
+
+
