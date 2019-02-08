@@ -17,4 +17,13 @@
 
 ### Iniciando com Android
 
-Para iniciar os trabalhos, temos que instalar o [Android Studio](https://developer.android.com/studio/?hl=pt-br)
+Para iniciar os trabalhos, temos que instalar o [Android Studio](https://developer.android.com/studio/?hl=pt-br).
+
+Primeiros passos para o seu código: 
+
+1. Start a new Android Studio project
+    1.1. As telas do Android são chamadas de `Activity`
+    1.2. Selecionar **sempre** a opção `Empty Activity`
+    1.3. Em _Company Name_ manter a nomenclatura de pacotes usada em Java por exemplo
+    1.4. O nome do pacote é sempre o que separa um aplicativo de outro na _Google Play_, é o identificador.
+ 
