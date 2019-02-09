@@ -74,3 +74,6 @@ Primeiros passos para o seu código:
     }
 
     ```
+
+#### Para exportar o seu projeto ao inves Android Studio: 
+- `File > Export to Zip File`
