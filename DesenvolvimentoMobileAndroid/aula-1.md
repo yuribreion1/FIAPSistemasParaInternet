@@ -57,6 +57,9 @@ Primeiros passos para o seu código:
         android:layout_height= "wrap_content"
         android:id="@id/edtNumero" />     //Inicializando a variavel edtNumero
     ```
+
+    > O atributo **wrap_content** significa que ele usa somente a largura ou altura necessária para o componente_
+
 7. Passando o valor entrado no campo para a lógica da aplicação: 
     ```java
     EditText edtNumero;
@@ -77,3 +80,11 @@ Primeiros passos para o seu código:
 
 #### Para exportar o seu projeto ao inves Android Studio: 
 - `File > Export to Zip File`
+
+#### Conteúdo extra aula
+
+- Adicionado um ID no `xml` para ser manipulado no `Activity`
+
+```xml
+android:id="@+id/lista_alunos"
+```
