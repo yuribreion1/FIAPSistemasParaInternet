@@ -86,5 +86,9 @@ Primeiros passos para o seu código:
 - Adicionado um ID no `xml` para ser manipulado no `Activity`
 
 ```xml
-android:id="@+id/lista_alunos"
+ <ListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/lista_alunos">
+  </ListView>
 ```
