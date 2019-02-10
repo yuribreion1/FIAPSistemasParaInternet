@@ -1,4 +1,6 @@
-# Aula 1 - 08/02/2019
+# Aula 1 - 08/02/2019 
+
+[Codigo resultado da aula](https://github.com/yuribreion1/Android)
 
 ### Alguns detalhes e beneficios do Android em relação ao iOS
 
@@ -89,6 +91,6 @@ Primeiros passos para o seu código:
  <ListView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:id="@+id/lista_alunos">
+      android:id="@+id/lista_alunos"> // Aqui temos um ID como lista_alunos
   </ListView>
 ```
