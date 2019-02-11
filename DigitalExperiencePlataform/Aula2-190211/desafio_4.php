@@ -9,11 +9,13 @@
 <body>
     <?php 
 
-       for ($multiplicando=1; $multiplicando < 9; $multiplicando++) { 
+       for ($multiplicando=1; $multiplicando <= 9; $multiplicando++) { 
+        echo "<br>Tabuada do " . $multiplicando . "<br>";
            for ($multiplicador=1; $multiplicador <= 10 ; $multiplicador++) { 
-               echo "Tabuada do " . $multiplicador . "<br>";
+               echo "<br>" . $multiplicando . " * " . $multiplicador . " = " . $multiplicando * $multiplicador;
                
            }
+           echo "<br>";
        }
     ?>
 </body>
