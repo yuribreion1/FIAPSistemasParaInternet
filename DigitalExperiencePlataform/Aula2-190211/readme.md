@@ -70,6 +70,46 @@
 ```
 -   Exemplo feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/foreach.php)
 
+## Funções
+
+```php
+    <?php 
+        function digaAlgo() {
+            echo "Ontem o Corinthians perdeu!";
+        }
+
+        //Chamada da função
+        digaAlgo();
+    ?>
+```
+
+### Função com chamada de retorno
+
+```php
+    <?php 
+        function somar($x, $y) {
+            return $x + $y;
+        }
+
+        function subtrair($x, $y) {
+            return $x - $y;
+        }
+
+        function multiplicar($x, $y) {
+            return $x * $y;
+        }
+
+        function dividir($x, $y) {
+            return $x / $y;
+        }
+
+        echo "Soma: " . somar(10,15) . "<br>";
+        echo "Subtração: " . subtrair(10,15) . "<br>";
+        echo "Multiplicação: " . multiplicar(10,15) . "<br>";
+        echo "Divisão: " . dividir(10,15);
+    ?>
+```
+
 #### Professor compartilhou um desafio para tabuada
 
 > Imprima na tela as tabuadas de 1 a 10, utilizando os conceitos das aulas anteriores
