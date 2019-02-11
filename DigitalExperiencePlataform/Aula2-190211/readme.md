@@ -53,4 +53,19 @@
         }
     ?>
 ```
--   Exemplo feito []
+-   Exemplo feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/while.php)
+
+### Foreach
+
+-   Percorre o vetor e grava o valor em uma variável auxiliar dentro do processo
+
+```php
+    <?php 
+    $numeros = array(2, 7, 18, 96, 12);
+
+       foreach ($numeros as $numero) {
+           echo $numero . "<br>";
+       } 
+    ?>
+```
+
