@@ -70,3 +70,19 @@
 ```
 -   Exemplo feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/foreach.php)
 
+#### Professor compartilhou um desafio para tabuada
+
+> Imprima na tela as tabuadas de 1 a 10, utilizando os conceitos das aulas anteriores
+
+```php
+    <?php 
+       for ($multiplicando=1; $multiplicando < 9; $multiplicando++) { 
+           for ($multiplicador=1; $multiplicador <= 10 ; $multiplicador++) { 
+               echo "Tabuada do " . $multiplicador . "<br>";
+               
+           }
+       }
+    ?>
+```
+
+-   Segue exercicio feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/desafio_4.php).
