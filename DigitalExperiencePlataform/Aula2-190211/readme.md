@@ -6,6 +6,29 @@
 ## Switch case 
 -   [Definição de Switch](https://www.devmedia.com.br/php-estrutura-condicional-switch-case/38223), segue um [exercicio feito em sala](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/switch_case.php).
 
+```php
+<?php
+    $numero = 40;
+    
+    switch ($numero) {
+        case 34:
+            echo "Esse é o 34";
+            break;
+        case 37:
+            echo "Esse é o 37";
+            break;
+        case 35:
+            echo "Esse é o 35";
+            break;
+        case 40:
+            echo "Esse enfim é o 40!";
+        default:
+            echo "<br>Fim do programa";
+            break;
+    }
+    ?>
+```
+
 ## Laços de repetição
 
 ### For
@@ -17,3 +40,17 @@
        } 
     ?>
 ```
+-   Exemplo feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/lacoFor.php)
+
+### While
+
+```php
+    <?php 
+        $contador = 0;
+        while ($contador < 10) {
+            echo "<h1>Boa noite turma!</h1>" . "<br>";
+            $contador++;
+        }
+    ?>
+```
+-   Exemplo feito []
