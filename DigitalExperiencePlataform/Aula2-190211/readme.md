@@ -142,3 +142,5 @@
         echo converteParaFahrenheit(30);
     ?>
 ```
+
+-   Segue exercicio feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/desafio_5.php).
