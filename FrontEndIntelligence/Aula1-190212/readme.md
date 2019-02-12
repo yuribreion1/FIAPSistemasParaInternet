@@ -8,3 +8,17 @@
 
 4.  Após as alterações da sua pagina temos que _buildar_ nossa pagina usando `jekyll build` no terminal e por fim `jekyll serve` para disponibilizar a pagina no `localhost`
 
+5.  O `Jekyll` também suporta a linguagem _Markdown_, então podemos criar uma postagem dessa forma como o exemplo abaixo:
+
+``` markdown
+---
+layout: page
+title: Pagina de teste usando Markdown
+---
+
+function teste(a, b) {
+    return a + b;
+} 
+console.log(teste(3, 5));
+
+```
