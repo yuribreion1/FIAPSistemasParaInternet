@@ -31,3 +31,20 @@ layout: page
 title: titulo da pagina
 ```
 ### Criando pagina estatica para subir no [Github.io](https://pages.github.com/)
+
+1.  Criar um novo repositório no Github
+
+2.  Executar os comandos que o git te passa ao criar um novo repositório:
+
+``` git
+echo "# fiap-si" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin repository_url
+git push -u origin master
+```
+
+3.  Com isso você fará seu primeiro `push` para a master
+
+4.  Vamos criar o projeto `Jekyll` usando o comando `jekyll new . `
