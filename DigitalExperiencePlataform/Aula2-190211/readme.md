@@ -110,6 +110,45 @@
     ?>
 ```
 
+### Funções matemáticas
+
+1.  Pow - _potencia_
+
+```php
+    pow(2, 5);
+```
+
+2.  Raiz quadrada
+
+```php
+    sqrt(100);
+```
+
+3.  Rand - _randomico_
+
+```php
+    rand(1, 100);
+```
+
+4.  Min - _menor valor_
+
+```php
+    min($variavel);
+```
+
+5.  Max - _maior valor_
+
+```php
+    max($variavel);
+```
+
+6. Sort - _Ordenação crescente_
+
+```php
+    sort($lista);
+```
+
+
 #### Professor compartilhou um desafio para tabuada
 
 > Imprima na tela as tabuadas de 1 a 10, utilizando os conceitos das aulas anteriores
