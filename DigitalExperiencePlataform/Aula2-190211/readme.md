@@ -112,41 +112,68 @@
 
 ### Funções matemáticas
 
-1.  Pow - _potencia_
+1.  **Pow** - _potencia_
 
 ```php
     pow(2, 5);
 ```
 
-2.  Raiz quadrada
+2.  **Raiz quadrada**
 
 ```php
     sqrt(100);
 ```
 
-3.  Rand - _randomico_
+3.  **Rand** - _randomico_
 
 ```php
     rand(1, 100);
 ```
 
-4.  Min - _menor valor_
+4.  **Min** - _menor valor_
 
 ```php
     min($variavel);
 ```
 
-5.  Max - _maior valor_
+5.  **Max** - _maior valor_
 
 ```php
     max($variavel);
 ```
 
-6. Sort - _Ordenação crescente_
+6. **Sort** - _Ordenação crescente_
 
 ```php
     sort($lista);
 ```
+
+### Funções que manipulam string
+
+1.  **strlen** - _Conta caracteres_
+
+```php
+    strlen($string);
+```
+
+2.  **strtoupper** - _Converte para caixa alta_
+
+```php
+    strtoupper($string);
+```
+
+3.  **strtolower** - _Converte para caixa baixa_
+
+```php
+    strtolower($string);
+```
+
+4.  **strstr** - _Procura um caracter_
+
+```php
+    strstr($string, '!');
+```
+
 
 
 #### Professor compartilhou um desafio para tabuada
