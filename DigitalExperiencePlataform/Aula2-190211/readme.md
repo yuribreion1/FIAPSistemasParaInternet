@@ -126,3 +126,19 @@
 ```
 
 -   Segue exercicio feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/desafio_4.php).
+
+
+#### Desafio para conversão de temperatura
+
+> Utilizando uma função com parâmetro, crie uma conversão entre graus Celsius e Fahrenheit: 
+
+```php
+    <?php 
+
+        function converteParaFahrenheit($celsius) {
+            return ($celsius * 1.8) + 32;
+        }
+
+        echo converteParaFahrenheit(30);
+    ?>
+```
