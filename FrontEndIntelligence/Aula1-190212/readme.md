@@ -22,3 +22,12 @@ function teste(a, b) {
 console.log(teste(3, 5));
 
 ```
+
+6.  Podemos chamar automaticamente um tema do `Jekyll` usando uma marcação especifica da linguagem `liquid`: 
+
+``` markdown
+---
+layout: page
+title: titulo da pagina
+```
+### Criando pagina estatica para subir no [Github.io](https://pages.github.com/)
