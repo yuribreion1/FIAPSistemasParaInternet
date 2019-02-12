@@ -232,3 +232,5 @@
 
     ?>
 ```
+
+-   Segue exercicio feito [aqui](https://github.com/yuribreion1/FIAPSistemasParaInternet/blob/master/DigitalExperiencePlataform/Aula2-190211/desafio_6.php).
