@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Optimization Technology - Aula 2</title>
+</head>
+
+<body>
+    <svg id="tela" width="100%" height="1000" xmlns="http://www.w3.org/2000/svg">
+        <circle id="bolinha" cx="400" cy="500" r="100" fill="green"></circle>
+    </svg>
+    <script type="text/javascript">
+        var tela = document.getElementById("tela");
+        for (let eixo = 0; eixo < 100; eixo++) {
+            let x = eixo;
+            let y = x * x / 10 - 5 * x + 100
+            tela.innerHTML += '<circle cx="' + x + '"cy="' + y + '" r="5" fill="red"></circle>';
+        }
+
+        var bolinha = document.getElementById("bolinha");
+
+        var bx = 0;
+
+            anima = () => {
+                bolinha.setAttribute("cx", bx);
+                bx = bx + 5 % 800;
+            }
+
+        window.setInterval(
+            anima, 50
+        )
+    </script>
+</body>
+
+</html>
