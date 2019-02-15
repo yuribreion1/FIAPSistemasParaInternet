@@ -45,13 +45,11 @@
      ```
 
 -   Instanciamos a variável que receberá o ID no `MainActivity.java`
-    <br>
 
     `ImageView imgPessoa;`
-    <br>
 
     Instanciamos uma view para receber cada tipo de imagem:
-    <br>
+    
     ``` java
     public void pessoa01(View view) {
         imgPessoa.setImageResource(R.drawable.p1);
