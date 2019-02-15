@@ -10,7 +10,7 @@
 ## Colocando imagem a tela
 
 -   Criamos a tag `ImageView`
-<br>
+
     ``` xml
      <ImageView
      android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
     `ImageView imgPessoa;`
 
     Instanciamos uma view para receber cada tipo de imagem:
-    
+
     ``` java
     public void pessoa01(View view) {
         imgPessoa.setImageResource(R.drawable.p1);
