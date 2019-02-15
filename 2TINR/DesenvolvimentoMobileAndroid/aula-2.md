@@ -10,6 +10,7 @@
 ## Colocando imagem a tela
 
 -   Criamos a tag `ImageView`
+<br>
     ``` xml
      <ImageView
      android:layout_width="wrap_content"
@@ -20,6 +21,7 @@
      ```
 
 -   Criamos três botões para cada pessoa
+<br>
 
     ``` xml
 
@@ -43,11 +45,13 @@
      ```
 
 -   Instanciamos a variável que receberá o ID no `MainActivity.java`
-        
+    <br>
+
     `ImageView imgPessoa;`
+    <br>
 
     Instanciamos uma view para receber cada tipo de imagem:
-
+    <br>
     ``` java
     public void pessoa01(View view) {
         imgPessoa.setImageResource(R.drawable.p1);
@@ -63,7 +67,7 @@
     ```
 
 -   Uma forma refatorada sem repetir código pode ser feita, definindo a mesma variável para os 3 botões e atribuir um ID para cada botão: 
-
+    <br>
     ``` xml
       <Button
      android:layout_width="match_parent"
