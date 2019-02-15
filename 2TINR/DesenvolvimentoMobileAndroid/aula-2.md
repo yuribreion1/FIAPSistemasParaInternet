@@ -61,3 +61,52 @@
         imgPessoa.setImageResource(R.drawable.p3);
     }
     ```
+
+-   Uma forma refatorada sem repetir código pode ser feita, definindo a mesma variável para os 3 botões e atribuir um ID para cada botão: 
+
+    ``` xml
+      <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:onClick="alterarImagem"
+     android:text="Pessoa 01"
+     android:id="@+id/btn1"/>
+
+     <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:onClick="alterarImagem"
+     android:text="Pessoa 02"
+     android:id="@+id/btn2"/>
+
+    <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:onClick="alterarImagem"
+     android:text="Pessoa 03"
+     android:id="@+id/btn3"/>
+     ```
+
+    No `MainActivity.java`:
+    <br>
+
+    ``` java
+    public void alterarImagem(View view) {
+        
+        // Pegando ID do xml
+        switch (view.getId()) {
+            case R.id.btn1:
+            imgPessoa.setImageResource(R.drawable.p1);
+            break;
+
+            case R.id.btn2:
+            imgPessoa.setImageResource(R.drawable.p2);
+            break;
+
+            case R.id.btn3:
+            imgPessoa.setImageResource(R.drawable.p3);
+            break;
+
+        }
+    }
+    ```
