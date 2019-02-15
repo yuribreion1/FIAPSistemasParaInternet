@@ -21,7 +21,6 @@
      ```
 
 -   Criamos três botões para cada pessoa
-<br>
 
     ``` xml
 
