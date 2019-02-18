@@ -37,3 +37,25 @@ Código do desafio esta disponível [aqui](https://github.com/yuribreion1/FIAPSi
 </html>
 
 ```
+
+Este código pode ser melhorado considerando que os valores sejam gerados de forma randomica e não apenas se repetissem.
+Outra solução é não gravar números repetidos.
+
+```php
+<?php 
+        function sorteio() {
+
+                //Recebendo números
+                $n = array();
+
+                // Usando o while para executar até que a regra seja atendida
+                while (count($n) < 6) {
+                    $valor = rand(1, 60);
+                    $n[$valor] = $valor;
+                }
+                sort($n);
+                echo "Os números sorteados da Mega Sena são: " . implode(",",$n) . "<br>";
+            }
+        echo sorteio();
+    ?>
+```
