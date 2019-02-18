@@ -59,3 +59,88 @@ Outra solução é não gravar números repetidos.
         echo sorteio();
     ?>
 ```
+
+Muitas duvidas surgiram a respeito de escopo de variáveis: local e global e um exemplo foi feito a este respeito
+
+O termo **global** altera o escopo da variável:
+
+``` php
+<?php 
+        $variavel_externa = "fora";
+
+        function teste() {
+
+            // Termo global altera o escopo da variavel
+            global $variavel_externa;
+
+            $variavel_externa = "dentro";
+            $variavel_interna = "local";
+        }
+
+        echo $variavel_externa;
+        echo "<br>";
+
+        teste();
+        echo $variavel_externa;
+    ?>
+```
+
+As linguagens usadas no _backend_ estão muito ligadas a web, então compreender o conceito de _requisições HTTP_ é muito importante, segue algumas delas: 
+
+-   GET
+-   POST
+-   PUT
+-   DELETE
+
+Podemos trabalhar com elas aqui, segue um exemplo do _POST_:
+
+``` php
+<?php
+    if (isset($_POST['enviar'])) {
+        echo "Feita a requisicão do tipo POST";
+
+        //Pegando valor do atributo name usado no HTML, passado pelo POST
+        $descricao = $_POST['descricao'];
+    }
+```
+
+Segue um exemplo mais completo para usuário e senha com o framework `UIKIT`:
+
+``` php
+<?php 
+        if (isset($_POST['enviar'])) {
+            $usuario = $_POST['usuario'];
+            $senha = $_POST['senha'];
+
+            if ($usuario && $senha) {
+                echo "Seu usuário é: " . $usuario;
+                echo "<br>";
+                echo "Sua senha é: " . $senha;
+            } else {
+                echo "O campo não pode estar em branco";
+            }
+        }
+    ?>
+<body>
+    <main class="uk-container">
+        <form method="post" action="formulario.php">
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">Autenticação</legend>
+                <div class="uk-margin">
+                    <label for="usuario">Usuário</label>    
+                </div>
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" name="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="uk-margin">
+                    <label for="senha">Senha:</label>    
+                </div>
+                <div class="uk-margin">
+                    <input class="uk-input" type="password" name="senha">
+                </div>
+                <input type="submit" name="enviar" value="Submeter" class="uk-button uk-button-default" onclick="UIkit.notification({message: 'Solicitação em andamento...'})" required>
+            </fieldset>
+        </form>
+    </main>
+</body>
+```
