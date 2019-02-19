@@ -7,4 +7,9 @@
 
 Alteramos o titulo da pagina no arquivo `_config.yml`
 
+``` yml
+title: Manufatura 3D
+email: meu-email@example.com
+```
+
 
