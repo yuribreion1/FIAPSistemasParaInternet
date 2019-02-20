@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 3 - 19/02/2019</title>
+    <style>
+        * {
+            font-size: 25px;
+        }
+        #numero {
+            width: 70px;
+        }
+
+        #saida {
+            background-color: #efefef;
+        }
+        .container {
+           border: 1px solid black;
+           margin: 100px;
+           padding: 20px;
+           display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="interno">
+            <label for="numero">Numero:</label>
+            <input type="number" name="numero" id="numero" width="50">
+            <input type="submit" value="Submeter" onclick="f();">
+        </div>
+        <div class="saida">
+        </div>
+        <script>
+            function f() {
+                var num = document.getElementById("numero").value;
+                console.log(num);
+                var p = num;
+                for (let i = num - 1; i > 1; i--) {
+                    p *= i;
+                    
+                }
+                alert('Fatorial de ' + num + ' é igual a ' + p);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
