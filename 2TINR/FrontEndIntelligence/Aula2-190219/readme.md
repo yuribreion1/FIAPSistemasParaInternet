@@ -22,3 +22,13 @@ Já no arquivo de `index.md` criamos um for para passar por todas os arquivos da
     {% endfor %}
 ```
 
+As paginas criadas dentro de pessoas podem ter suas paginas separadas definindo o valor `true` para `output:` no arquivo `_config.yml` como esta abaixo:
+
+``` liquid
+collections: 
+  pessoas: 
+    output: true
+```
+
+
+
