@@ -24,3 +24,23 @@
 
 -   Saindo um pouco do conceito de _ops_ em _dev_ temos que saber a respeito das ações do desenvolvedor. O [12factor](https://12factor.net/) foi criado para definir alguns padrões que permitam que aplicações sejam feitas voltadas a facil aplicação para nuvem, que recebe o termo de _cloud native_.
 Exite o termo _anti-patterns_ que são aplicações que não conseguem ser aplicados ao ambiente de nuvem. Pode se considera um mau uso, que inviabiliza o uso dela de outra forma a não ser como ela já foi desenvolvida.
+
+### Desafio em sala:
+
+O trecho que segue é uma adpatação de um cenário descrito no Livro "The Phoenix Project";
+    1.  Leia atentamente o cenário descrito;
+    2.  Discuta a situação descvrita entre os componentes do grupo;
+    3.  Com base nas 4 hipóteses escolha aquela que na opinião do grupo melhor descreve       uma possível causa raiz para o problema;
+    4.  Adicione a resposta no questionário enviado para análise e comparação do que        fora definido como causa por cada grupo;
+
+**Primeiro contato (como a falha foi relatada)**:
+    <blockquote>
+    From: Dick Landry 
+    To: Steve Masters
+    Date: September 4, 8:27 AM
+    Priority: Highest
+    Subject: Sistema de pagamentos indisponível
+        Oi, Steve.
+        Nós estamos enfrentando uma séria falha no funcionamento do sistema de pagamentos, ainda estamos avaliando o problema, aparentemente algo com os números exibidos no sistema atualmente que segundo o pessoal do financeiro estão "inconsistentes" consequentemente centenas de colaboradores possuem ordens de pagamentos represadas o que impede o cálculo do que deve ser pago à quem e quando, com isso estamos correndo o risco de não termos nossos colaboradores sendo pagos, precisamos corrigir isso até a próxima sexta feira, dia 05 antes que a janela de pagamentos feche.
+        ATT
+    </blockquote>
