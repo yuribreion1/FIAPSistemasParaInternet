@@ -34,7 +34,7 @@ O trecho que segue é uma adpatação de um cenário descrito no Livro "The 
     4.  Adicione a resposta no questionário enviado para análise e comparação do que        fora definido como causa por cada grupo;
 
 **Primeiro contato (como a falha foi relatada)**:
-    <blockquote>
+    
     From: Dick Landry 
     To: Steve Masters
     Date: September 4, 8:27 AM
@@ -43,4 +43,4 @@ O trecho que segue é uma adpatação de um cenário descrito no Livro "The 
         Oi, Steve.
         Nós estamos enfrentando uma séria falha no funcionamento do sistema de pagamentos, ainda estamos avaliando o problema, aparentemente algo com os números exibidos no sistema atualmente que segundo o pessoal do financeiro estão "inconsistentes" consequentemente centenas de colaboradores possuem ordens de pagamentos represadas o que impede o cálculo do que deve ser pago à quem e quando, com isso estamos correndo o risco de não termos nossos colaboradores sendo pagos, precisamos corrigir isso até a próxima sexta feira, dia 05 antes que a janela de pagamentos feche.
         ATT
-    </blockquote>
+    
