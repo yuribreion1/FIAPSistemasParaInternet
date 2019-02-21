@@ -21,3 +21,6 @@
 -   Exemplos de _Plataform as a Service(PAAS)_
     -   [Heroku](https://signup.heroku.com/?c=70130000000NcJNAA0)
     -   [Openshift](https://www.openshift.com/)
+
+-   Saindo um pouco do conceito de _ops_ em _dev_ temos que saber a respeito das ações do desenvolvedor. O [12factor](https://12factor.net/) foi criado para definir alguns padrões que permitam que aplicações sejam feitas voltadas a facil aplicação para nuvem, que recebe o termo de _cloud native_.
+Exite o termo _anti-patterns_ que são aplicações que não conseguem ser aplicados ao ambiente de nuvem.
