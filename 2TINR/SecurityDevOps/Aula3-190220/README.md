@@ -41,6 +41,10 @@ O trecho que segue é uma adpatação de um cenário descrito no Livro "The 
     Priority: Highest
     Subject: Sistema de pagamentos indisponível
         Oi, Steve.
-        Nós estamos enfrentando uma séria falha no funcionamento do sistema de pagamentos, ainda estamos avaliando o problema, aparentemente algo com os números exibidos no sistema atualmente que segundo o pessoal do financeiro estão "inconsistentes" consequentemente centenas de colaboradores possuem ordens de pagamentos represadas o que impede o cálculo do que deve ser pago à quem e quando, com isso estamos correndo o risco de não termos nossos colaboradores sendo pagos, precisamos corrigir isso até a próxima sexta feira, dia 05 antes que a janela de pagamentos feche.
+        Nós estamos enfrentando uma séria falha no funcionamento do sistema de pagamentos
+        ainda estamos avaliando o problema, aparentemente algo com os números exibidos no sistema atualmente que segundo o pessoal do financeiro estão "inconsistentes" consequentemente centenas de colaboradores possuem ordens de pagamentos represadas o que impede o cálculo do que deve ser pago à quem e quando, com isso estamos correndo o risco de não termos nossos colaboradores sendo pagos, precisamos corrigir isso até a próxima sexta feira, dia 05 antes que a janela de pagamentos feche.
         ATT
+
+    > Descrição do Problema (Perspectiva do especialista do coordenador de RH):
+    Na execução do programa de ERP responsável pela geração da folha de pagamento ontem, todos os registros dos funcionários referentes a horas trabalhadas desapareceram. Temos certeza de que é um problema de TI. Essa confusão está nos impedindo de pagar nossos funcionários, violando inúmeras leis trabalhistas estaduais".
     
