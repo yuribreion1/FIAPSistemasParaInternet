@@ -24,7 +24,7 @@
     -   [Openshift](https://www.openshift.com/)
 
 -   Saindo um pouco do conceito de _ops_ em _dev_ temos que saber a respeito das ações do desenvolvedor. O [12factor](https://12factor.net/) foi criado para definir alguns padrões que permitam que aplicações sejam feitas voltadas a facil aplicação para nuvem, que recebe o termo de _cloud native_.
-Exite o termo _anti-patterns_ que são aplicações que não conseguem ser aplicados ao ambiente de nuvem. Pode se considera um mau uso, que inviabiliza o uso dela de outra forma a não ser como ela já foi desenvolvida.
+Exite o termo _anti-patterns_ que são más praticas(vícios) aplicadas em projetos de desenvolvimento de software.
 
 ### Desafio em sala:
 
