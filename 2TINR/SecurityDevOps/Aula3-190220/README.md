@@ -5,6 +5,7 @@
 -   Se aplica o termo **_IAC_**(_Infrastructure as a code_)
     Desenvolver e configurar a infraestrutura através de código e ferramentas de automação de forma que a arquitetura possa ser versionada.
     Esta abordagem ajuda e aumenta a velocidade do _deploy_ e melhora o processo de escalabilidade. Esta prática possui duas caracteristicas: 
+    
     1.  **Computação em nuvem**: Arquitetura escalavel onde é possível criar servidores e alocar recursos de forma dinâmica.
 
     2.  **Automação e orquestração de ambientes**: Ferramentas para manipulação de recursos como _cloud computing_ e virtualização.
@@ -77,3 +78,5 @@ _CAB_: Commit Advisory Border - Essencialmente o que chamamos de comitês de ap
 **Hipótese 4: Mitigação aplicada pelo time de segurança**:
 
 Instalação de um patch de segurança, a instalação ocorreu na noite que antecedeu o primeiro report de falha, o time responsável entregou a atualização sem passar pelo processo de CAB segundo orientações de seu próprio coordenador devido a criticidade e urgência da operação, a alteração consistiu em implementar um token para omitir campos considerados sigilosos e relatados como vulneráveis após um relatório de auditoria.
+
+[Postagem do formuário](https://pt.surveymonkey.com/r/J283Q78) 
