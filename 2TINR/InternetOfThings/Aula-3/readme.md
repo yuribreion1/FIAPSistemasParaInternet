@@ -1,6 +1,6 @@
 ## Aula 3 - 21/02/2019
 
-Para seguir com os conceitos teórios, temos que entender um pouco de química e física. Para entender a estrutura de uma matéria é quebrar ela em mais partes possíveis para ter uma molécula, podemos usar o exemplo da água:
+Para seguir com os conceitos teórios, temos que entender um pouco de química e física. Para entender a estrutura de um elemento é necessario quebra-lo até chegar a molécula, sendo assim a menor parte, permanecendo ainda assim o mesmo elemento, podemos usar o exemplo da água:
 
 ![agua](https://cmapspublic.ihmc.us/rid=1301817238268_1347664450_42111/Molecula%20agua.jpg)
 
@@ -17,9 +17,9 @@ A tensão é o que movimenta os elétrons, quando há equilibro, não tem mais t
 
 -   A tensão é medida em **_voltagem_**
 
--   Uma _corrente elétrica_ cujo sentido varia no tempo, ao contrário da _corrente contínua_ cujo sentido permanece constante ao longo do tempo. A corrente é medida em **_âmperes_** 
+-   Uma _corrente alternada_ cujo sentido varia no tempo, ao contrário da _corrente contínua_ cujo sentido permanece constante ao longo do tempo. A corrente é medida em **_âmperes_** 
 
-Outro conceito é a _resistência_, que cria impedimentos para o movimento da tensão. A resistência é medida em **_ohms_**, representado pelo ômega:
+Outro conceito é a _resistência_, que cria impedimentos para o movimento do elétron. A resistência é medida em **_ohms_**, representado pelo ômega:
 
 ![omega](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F25%2FGreek_letter_omega.png&f=1)
 
