@@ -19,13 +19,13 @@ Repositório criado para compartilhar a códificação usada nas aulas
 
 ## Segundo ano:
 
-- Desenvolvimento Mobile Android - Douglas Carvalho Cabral
-- Digital Experience Plataform - Gustavo Torrente
+- [Desenvolvimento Mobile Android](https://github.com/yuribreion1/FIAPSistemasParaInternet/tree/master/2TINR/DesenvolvimentoMobileAndroid) - Douglas Carvalho Cabral
+- [Digital Experience Plataform](https://github.com/yuribreion1/FIAPSistemasParaInternet/tree/master/2TINR/DigitalExperiencePlataform) - Gustavo Torrente
 - Marketing Digital em Redes Sociais - Allen Fernando Oberleitner Lima
-- Front End Intelligence - Guilherme Alberto Wachs Lopes
+- [Front End Intelligence](https://github.com/yuribreion1/FIAPSistemasParaInternet/tree/master/2TINR/FrontEndIntelligence) - Guilherme Alberto Wachs Lopes
 - Empreendedorismo 2.0 - Allen Fernando Oberleitner Lima
 - Inovação Disruptiva - Renato Kimura
-- Internet of Things - Douglas Carvalho Cabral
-- Optimization Technology - Guilherme Alberto Wachs Lopes
+- [Internet of Things](https://github.com/yuribreion1/FIAPSistemasParaInternet/tree/master/2TINR/InternetOfThings) - Douglas Carvalho Cabral
+- [Optimization Technology](https://github.com/yuribreion1/FIAPSistemasParaInternet/tree/master/2TINR/OptimizationTechnology) - Guilherme Alberto Wachs Lopes
 - Plataforma de Mobilidade Corporativa(iOS) - Agesandro Scarpione
-- Security DevOps - Helder Pereira
+- [Security DevOps](https://github.com/yuribreion1/FIAPSistemasParaInternet/tree/master/2TINR/SecurityDevOps) - Helder Pereira
