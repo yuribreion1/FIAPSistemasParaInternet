@@ -64,4 +64,3 @@ function circulo(x, y, r) {
 ```
 
 -   O professor apresentou o [python tutor](http://pythontutor.com/visualize.html#mode=edit)
-
