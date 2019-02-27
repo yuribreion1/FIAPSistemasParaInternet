@@ -1,0 +1,14 @@
+---
+layout: home
+---
+
+{% for i in site.pessoas %}
+   <li><a href="{{ i.url }}">{{ i.title }} </a></li>
+{% endfor %}
+
+{% for i in site.nacs %}
+    <li><a href="{{ i.url }}">{{ i.title }}</a></li>
+{% endfor %}
+
+<li><a href="paises.html">Lista de países</a></li>
+
