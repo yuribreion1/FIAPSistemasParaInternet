@@ -13,6 +13,16 @@
 
 As novas empresas cada vez mais tem trabalhado em criar aplicações cada vez mais granularizadas, isso se aplica muito a aplicações _Cloud Native_ usando _Micro servicos_, onde temos várias aplicações onde cada uma tem a sua responsábilidade bem definida.
 
-**Micro servicos**
+**Arquitetura monolítica vs. Micro servicos**
 
-![microservicos](https://nodexperts.com/blog/wp-content/uploads/2017/05/Mircroservice-Architecture.png)
+![microservicos](https://cdn-images-1.medium.com/max/2000/1*xu1Ge_Cew0DHdSU6ETcpLQ.png)
+
+**Vantagens e desvantagens no uso de micro serviços**
+
++ Fácil implementação
++ Em  geral é uma solução totalmente _cloud native_
+
+- Muito granular
+- Teste de integração se torna muito complexo
+- Aumento na curva de aprendizagem 
+
