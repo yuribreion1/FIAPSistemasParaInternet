@@ -10,3 +10,5 @@
 
 -   Um sistema composto por diversos modulos e que todos eles estão dentro de um único pacote, vários recursos juntos
     -   Exemplo: Sistema que processa _billing_, _notification_, _case management_. 
+
+As novas empresas cada vez mais tem trabalhado em criar aplicações cada vez mais granularizadas, isso se aplica muito a aplicações _Cloud Native_ usando _Micro servicos_, onde temos várias aplicações onde cada uma tem a sua responsábilidade bem definida.
