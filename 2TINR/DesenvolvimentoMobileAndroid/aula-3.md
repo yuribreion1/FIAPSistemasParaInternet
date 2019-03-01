@@ -45,3 +45,14 @@
     imgJogador1 = setImageResource( imagens[a] );
     imgJogador2 = setImageResource( imagens[b] );
     ```
+
+- Por ultimo, fazemos a verificação de quem ganhou o jogo:
+``` java
+if (dado1.getNumero() > dado2.getNumero()) {
+    Toast.makeText(this,"Jogador 1 venceu!",1). show();
+} else if (dado1.getNumero() < dado2.getNumero()) {
+    Toast.makeText(this,"Jogador 2 venceu!",1). show();
+} else {
+    Toast.makeText(this,"Deu empate", 1). show();
+}
+```
