@@ -73,7 +73,6 @@ if (dado1.getNumero() > dado2.getNumero()) {
             cont = 0;
             // Voltamos para 0 para entrar na primeira condição
         }
-    }
     ```
 
 - Uma versão mais otimizada seria:
