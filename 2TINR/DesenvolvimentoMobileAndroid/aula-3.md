@@ -82,3 +82,67 @@ if (dado1.getNumero() > dado2.getNumero()) {
         img1.setImageDrawable( img2.getDrawable() ); // Imagem 1 segue a imagem2
         img2.setImageDrawable( aux ); // Imagem 2 recebe imagem 1
     ```
+
+### Internacionalização - Detectar idioma
+
+> "Nem tudo que é simples é o mais eficiente" - _Cabral_
+
+- Criamos um programa que recebe `nome` e `celular` com dois campos de `input`
+    ``` xml
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celular"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+    ```
+
+- Vamos passar a criar variaveis agora ao invés de setar um valor no atributo:
+    ``` xml
+    android:text="";
+    ```
+
+- Dentro da pasta `res` criamos um novo `values resource file` para o outro idioma dentro da pasta `values` como `values-en` no caso do ingles, veja como ficam os arquivos: 
+
+    **PT-BR**
+    ``` xml
+    <resources>
+        <string name="app_name">Internacionalização</string>
+        <string name="nome">Nome</string>
+        <string name="celular">Celular</string>
+        <string name="salvar">Salvar</string>
+    </resources>
+    ```
+
+    **EN**
+    ``` xml
+    <resources>
+        <string name="app_name">Internationalization</string>
+        <string name="nome">Name</string>
+        <string name="celular">Cellphone</string>
+        <string name="salvar">Save</string>
+    </resources>
+    ```
+
+    **DE**
+    ``` xml
+    <resources>
+        <string name="app_name">Internationalization</string>
+        <string name="nome">Name</string>
+        <string name="celular">Handynummer</string>
+        <string name="salvar">Speichern</string>
+    </resources>
+    ```
