@@ -56,3 +56,30 @@ if (dado1.getNumero() > dado2.getNumero()) {
     Toast.makeText(this,"Deu empate", 1). show();
 }
 ```
+### Desafio 
+
+> Ter uma imagem de quadrado e outra de triangulo, quando clicar em jogar eles trocam
+
+- Criamos uma variável de controle como contador, `cont`
+    ``` java
+    if (cont == 0) {
+            item1.setImageResource(R.drawable.square);
+            item2.setImageResource(R.drawable.triangle);
+            cont++;
+            // Passará a ser cont = 1
+        } else {
+            item1.setImageResource(R.drawable.triangle);
+            item2.setImageResource(R.drawable.square);
+            cont = 0;
+            // Voltamos para 0 para entrar na primeira condição
+        }
+    }
+    ```
+
+- Uma versão mais otimizada seria:
+    ``` java
+        Drawable aux = img1.getDrawable();
+
+        img1.setImageDrawable( img2.getDrawable() ); // Imagem 1 segue a imagem2
+        img2.setImageDrawable( aux ); // Imagem 2 recebe imagem 1
+    ```
