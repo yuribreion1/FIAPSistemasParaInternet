@@ -22,4 +22,13 @@
 
 - Agora que criamos nosso projeto, podemos acessa-lo usando subindo para a basta com o nome do projeto `cd <nome>` e em seguida `npm run serve`
 
+- Ele vai retornar para você um novo servidor local com o projeto: 
+
+```
+    App running at:
+  - Local:   http://localhost:8080/ 
+  - Network: http://172.16.59.13:8080/
+```
+
 - Em `node_modules > bin > vue.cmd` que é a mesma coisa que executar `npx vue`
+
