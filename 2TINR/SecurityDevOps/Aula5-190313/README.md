@@ -37,10 +37,73 @@ Após clonar este caso, uma pasta com o mesmo nome será criada, caso você quei
 
 ### Verificando o status de seus arquivos
 
-- Usamos o comando `git status` para saber o status atual do nosso repositório: 
+- Usamos o comando `git status` para saber o status atual do nosso repositório, segue um exemplo: 
 
 ``` git
 $ git status
 # On branch master
 nothing to commit, working directory clean
 ```
+
+- Segue um exemplo de arquivos que não foram ainda `_commitados_`:
+
+``` git
+$ vim README
+$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#    README
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+### Adicionando novos arquivos
+
+- Através do comando `git add <nome do arquivo>` podemos registrar este arquivo para ser `_commitado_` 
+
+``` git
+$ git add README
+```
+
+- A partir de agora este arquivo `README` estará como _tracked_ e pronto para o _commit_
+
+### Analisando mudanças nos arquivos adicionados e não
+
+- Para ver o que você alterou mas ainda não selecionou, digite o comando `git diff` sem nenhum argumento
+
+``` git 
+$ git diff
+diff --git a/benchmarks.rb b/benchmarks.rb
+index 3cb747f..da65585 100644
+--- a/benchmarks.rb
++++ b/benchmarks.rb
+@@ -36,6 +36,10 @@ def main
+           @commit.parents[0].parents[0].parents[0]
+         end
+
++        run_code(x, 'commits 1') do
++          git.commits.size
++        end
++
+         run_code(x, 'commits 2') do
+           log = git.commits('master', 15)
+           log.size
+```
+
+- Isto compara o que esta no seu diretório e o que esta na área de seleção
+
+- Para verificar as mudanças que você já adicionou e que serão _commitadas_ use: `git diff --cached`
+
+### Fazendo _commit_ das suas mudanças
+
+- Uma vez que você adicionou arquivos e estão em _tracked_, você esta apto para _commitar_: 
+
+``` git
+**$ git commit -m "Story 182: Fix benchmarks for speed"**
+[master]: created 463dc4f: "Fix benchmarks for speed"
+ 2 files changed, 3 insertions(+), 0 deletions(-)
+ create mode 100644 README
+```
+
+
