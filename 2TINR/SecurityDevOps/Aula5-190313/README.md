@@ -34,3 +34,13 @@ Após clonar este caso, uma pasta com o mesmo nome será criada, caso você quei
 ### Ciclo de vida das atualizações
 
 ![ciclodevida](https://git-scm.com/figures/18333fig0201-tn.png)
+
+### Verificando o status de seus arquivos
+
+- Usamos o comando `git status` para saber o status atual do nosso repositório: 
+
+``` git
+$ git status
+# On branch master
+nothing to commit, working directory clean
+```
