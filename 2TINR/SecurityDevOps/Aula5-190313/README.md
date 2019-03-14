@@ -13,3 +13,21 @@
 
 - Para verificar suas configurações você pode usar o comando `$ git config --list`
 
+### Pedindo ajuda
+
+- Você pode pedir ajuda a determinado comando do git `$ git help <verb>`
+
+### Inicializando um novo repositório localmente
+
+- Supondo que você tenha uma pasta com um projeto de software qualquer, e você deseja iniciar o git nela, basta você digitar no terminal: `git init` que cria um subdiretório `.git`
+
+- Caso você já tenha arquivos nesta pasta eles estarão como `untracked` ou não rastreados dentro do git, agora é o momento de `_commitar_` seu código
+
+### Clonando um repositório existente
+
+- Caso você precise baixar um projeto que já esteja no Git para a sua maquina, usamos a função `git clone`, segue um exemplo: `$ git clone git://github.com/schacon/grit.git`
+    Após clonar este caso, uma pasta com o mesmo nome será criada, caso você queira uma pasta com outro nome pode usar o nome da pasta que desejar em seguida: `$ git clone git://github.com/schacon/grit.git <novo-nome>`
+
+### Ciclo de vida das atualizações
+
+![ciclodevida](https://git-scm.com/figures/18333fig0201-tn.png)
