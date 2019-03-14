@@ -10,6 +10,7 @@
 - Temos que definir nossas credenciais(usuário e e-mail da conta) no terminal que estamos trabalhando:
 
 *Usuário*: `$ git config --global user.name "Yuri Breion"`
+
 *E-mail*: `$ git config --global user.email yuri@yuri-producoes.com`
 
 - Para verificar suas configurações você pode usar o comando `$ git config --list`
