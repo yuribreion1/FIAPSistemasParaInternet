@@ -8,8 +8,9 @@
 ### Criando sua identidade
 
 - Temos que definir nossas credenciais(usuário e e-mail da conta) no terminal que estamos trabalhando:
-    *Usuário*: `$ git config --global user.name "Yuri Breion"`
-    *E-mail*: `$ git config --global user.email yuri@yuri-producoes.com`
+
+*Usuário*: `$ git config --global user.name "Yuri Breion"`
+*E-mail*: `$ git config --global user.email yuri@yuri-producoes.com`
 
 - Para verificar suas configurações você pode usar o comando `$ git config --list`
 
@@ -26,7 +27,8 @@
 ### Clonando um repositório existente
 
 - Caso você precise baixar um projeto que já esteja no Git para a sua maquina, usamos a função `git clone`, segue um exemplo: `$ git clone git://github.com/schacon/grit.git`
-    Após clonar este caso, uma pasta com o mesmo nome será criada, caso você queira uma pasta com outro nome pode usar o nome da pasta que desejar em seguida: `$ git clone git://github.com/schacon/grit.git <novo-nome>`
+
+Após clonar este caso, uma pasta com o mesmo nome será criada, caso você queira uma pasta com outro nome pode usar o nome da pasta que desejar em seguida: `$ git clone git://github.com/schacon/grit.git <novo-nome>`
 
 ### Ciclo de vida das atualizações
 
