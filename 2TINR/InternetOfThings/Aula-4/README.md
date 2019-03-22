@@ -4,11 +4,11 @@
 
 - Professor explicou como é calculado o resistor:
 
-    ![codigo de resistores](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjvgZHjxpThAhUUHbkGHZy1A_MQjRx6BAgBEAU&url=http%3A%2F%2Fblog.baudaeletronica.com.br%2Fcomo-ler-valores-em-resistores%2F&psig=AOvVaw00MdLlXn6mCGpOf1EqwRs_&ust=1553303009594395)
+    ![codigo de resistores](http://3.bp.blogspot.com/-aQat5vKmdqs/VQbqRVvdd8I/AAAAAAAAATE/JNvIZ4Mw0l4/s1600/codigo_de_cores_resistores.png)
 
 - Também comentou como é calculada a resistência para usar o componente no valor correto:
 
-    ![calculo de resistencia](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwje9vCZx5ThAhU3IbkGHSxhD8QQjRx6BAgBEAU&url=https%3A%2F%2Fensinandoeletrica.blogspot.com%2F2015%2F02%2Fcomo-calcular-potencia-corrente-e-tensao.html&psig=AOvVaw3iQLZtN-sN9qv1h2XYoXj-&ust=1553303099330176)
+    ![calculo de resistencia](https://1.bp.blogspot.com/-v-AjkP_C0Ms/VOfw2JrqP-I/AAAAAAAACkw/dN9tukoS7to/s1600/10373651_657546340998471_8642577972045171287_n.png)
 
     > Exemplo: Vamos imaginar um LED de 2V com corrente de 20mA sendo alimentado por 5V:
     R = (5V - 2V) / 0.02A
