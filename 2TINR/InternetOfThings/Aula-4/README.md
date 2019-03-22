@@ -29,3 +29,8 @@
     -   2.2k ohms   -> **_Vermelho/Vermelho/Vermelho_**
     -   3.3k ohms   -> **_Laranja/Laranja/Vermelho_**
     -   4.4k ohms   -> **_Amarelo/Amarelo/Vermelho_**
+
+- Agora temos o cenário oposto, dando as cores e determinando o seu valor:
+    -   Vermelho, Vermelho, Preto, Prata    -> **_22 ohms tendo o minimo 18.8 e máximo 24.2 ohms_**
+    -   Marrom, Preto, Preto, Prata         -> **_10 ohms tendo o minimo 9 e máximo 11 ohms_**
+    -   Verde, Azul, Preto, Dourado         -> **_56 ohms tendo o minimo 53.2 e máximo 58.8 no máximo_**
