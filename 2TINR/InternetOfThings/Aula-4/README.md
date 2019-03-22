@@ -25,3 +25,7 @@
     -   680 ohms    -> _Azul/Cinza/Marrom_
     -   10k ohms    -> _Marrom/Preto/Laranja_
     -   15k ohms    -> _Marrom/Vermelho/Laranja_
+    -   1.5k ohms   -> _Marrom/Verde/Vermelho_
+    -   2.2k ohms   -> _Vermelho/Vermelho/Vermelho_
+    -   3.3k ohms   -> _Laranja/Laranja/Vermelho_
+    -   4.4k ohms   -> _Amarelo/Amarelo/Vermelho_
