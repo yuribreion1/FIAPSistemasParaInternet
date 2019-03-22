@@ -16,7 +16,7 @@
     R = 150 ohm
 
 - Partindo para a parte prática, foram dados os valores em ohms e temos que determinar as cores:
-    -   1 ohm       -> _Preto/Marrom/Preto_
+    -   1 ohm       -> **_Preto/Marrom/Preto_**
     -   68 ohms     -> _Azul/Cinza/Preto_
     -   150 ohms    -> _Marrom/Verde/Marrom_
     -   220 ohms    -> _Vermelho/Vermelho/Marrom_
