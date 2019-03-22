@@ -17,15 +17,15 @@
 
 - Partindo para a parte prática, foram dados os valores em ohms e temos que determinar as cores:
     -   1 ohm       -> **_Preto/Marrom/Preto_**
-    -   68 ohms     -> _Azul/Cinza/Preto_
-    -   150 ohms    -> _Marrom/Verde/Marrom_
-    -   220 ohms    -> _Vermelho/Vermelho/Marrom_
-    -   330 ohms    -> _Laranja/Laranja/Marrom_
-    -   468 ohms    -> _Amarelo/Azul/Marrom_
-    -   680 ohms    -> _Azul/Cinza/Marrom_
-    -   10k ohms    -> _Marrom/Preto/Laranja_
-    -   15k ohms    -> _Marrom/Vermelho/Laranja_
-    -   1.5k ohms   -> _Marrom/Verde/Vermelho_
-    -   2.2k ohms   -> _Vermelho/Vermelho/Vermelho_
-    -   3.3k ohms   -> _Laranja/Laranja/Vermelho_
-    -   4.4k ohms   -> _Amarelo/Amarelo/Vermelho_
+    -   68 ohms     -> **_Azul/Cinza/Preto_**
+    -   150 ohms    -> **_Marrom/Verde/Marrom_**
+    -   220 ohms    -> **_Vermelho/Vermelho/Marrom_**
+    -   330 ohms    -> **_Laranja/Laranja/Marrom_**
+    -   468 ohms    -> **_Amarelo/Azul/Marrom_**
+    -   680 ohms    -> **_Azul/Cinza/Marrom_**
+    -   10k ohms    -> **_Marrom/Preto/Laranja_**
+    -   15k ohms    -> **_Marrom/Vermelho/Laranja_**
+    -   1.5k ohms   -> **_Marrom/Verde/Vermelho_**
+    -   2.2k ohms   -> **_Vermelho/Vermelho/Vermelho_**
+    -   3.3k ohms   -> **_Laranja/Laranja/Vermelho_**
+    -   4.4k ohms   -> **_Amarelo/Amarelo/Vermelho_**
