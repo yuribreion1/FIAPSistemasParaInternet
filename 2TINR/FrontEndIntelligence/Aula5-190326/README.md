@@ -63,3 +63,5 @@ export default {
 </style>
 
 ```
+
+** Dentro do arquivo `.vue` a propriedade _scaffold_ já cria a estrutura correta, instalar o [vetur](https://github.com/vuejs/vetur) **
