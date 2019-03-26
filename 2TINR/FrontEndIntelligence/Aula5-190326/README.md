@@ -65,3 +65,60 @@ export default {
 ```
 
 ** Dentro do arquivo `.vue` a propriedade _scaffold_ já cria a estrutura correta, instalar o [vetur](https://github.com/vuejs/vetur) **
+
+## Outro componente para incorporar um video
+
+- `Youtube.vue`
+
+``` html
+<template>
+    <iframe :src="url" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</template>
+
+<script>
+export default {
+    name: 'Youtube',
+    props: {
+        url: String
+    }
+}
+</script>
+
+<style>
+
+</style>
+
+```
+
+- `App.vue` 
+
+``` html
+<template>
+  <div id="app">
+    <Youtube url="https://player.vimeo.com/video/322667805"/>
+  </div>
+</template>
+
+<script>
+import Youtube from './components/Youtube.vue'
+
+export default {
+  name: 'app',
+  components: {
+    Youtube
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+```
