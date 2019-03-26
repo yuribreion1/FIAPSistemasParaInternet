@@ -13,3 +13,53 @@ Se der certo você vai receber:
   - Local:   http://localhost:8080/
   - Network: http://172.16.58.124:8080/
 ```
+
+Com o _node js_ podemos injetar arquivos _Javascript_ como o uso do `require`
+
+- Notamos que foi gerado um arquivo chamado `App.vue` que é renderizado dentro do _main.js_
+- Os atributos da tag são as propriedades do componente
+
+### Criamos uma nova propriedade: 
+
+``` html
+<template>
+    <Mensagem msg="Aqui é a minha propriedade"/>
+</template>
+<script>
+    import Mensagem from './components/Mensagem.vue'
+
+    export default {
+  name: 'app',
+  components: {
+    HelloWorld,
+    Mensagem
+  }
+}
+</script>
+```
+
+- Dentro do `Mensagem.vue`: 
+
+``` html
+<template>
+    <div class="bloco">
+        {{ msg }}
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Mensagem',
+    props: {
+        msg: String
+    }
+}
+</script>
+
+<style>
+.bloco {
+    color: red;
+}
+</style>
+
+```
