@@ -122,3 +122,16 @@ export default {
 </style>
 
 ```
+
+Outra propriedade além do Props, é a `data` que pode guardar um objeto, que é um estado do seu componente:
+
+``` javascript 
+export default {
+    data(){
+        return {
+            nome: "Um nome qualquer",
+            idade: 30
+        }
+    }
+}
+```
