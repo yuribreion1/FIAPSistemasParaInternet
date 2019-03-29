@@ -10,10 +10,10 @@
 
 -   Hoje há muitos meios de conectar e interligar as coisas como _RFID_ que através da internet conecta a ambientes computacionais. 
 
-**1969** - Primeira conexão da ARPANet, que viria a dar origens a internet
-**1996** - Primeiro celular com conexão a internet o _Nokia 9000 Communicator_
-**1998** - RFC 2460: especificação do IPv6
-**1999** - Kevin Asher do MIT cunha o termo _Internet of Things_ e funda o AutoID Center, estudando técnologias baseadas em _RFID_
+**1969** - Primeira conexão da ARPANet, que viria a dar origens a internet<br>
+**1996** - Primeiro celular com conexão a internet o _Nokia 9000 Communicator_<br>
+**1998** - RFC 2460: especificação do IPv6<br>
+**1999** - Kevin Asher do MIT cunha o termo _Internet of Things_ e funda o AutoID Center, estudando técnologias baseadas em _RFID_<br>
 **2005** - Primeira placa Arduino, no Interaction Design Instituteen
 
 -   Exemplo de automatização residencial usando [Alexa](https://www.youtube.com/watch?v=FDs40rfcVsU)   
