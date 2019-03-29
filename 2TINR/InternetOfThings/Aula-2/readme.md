@@ -8,7 +8,7 @@
 
 ### Evolução de IOT
 
--   Hoje há muitos meios de conectar e interligar as coisas como _RFID_ que através da internet conecta ao ambiente computacionais. 
+-   Hoje há muitos meios de conectar e interligar as coisas como _RFID_ que através da internet conecta a ambientes computacionais. 
 
 **1969** - Primeira conexão da ARPANet, que viria a dar origens a internet
 **1996** - Primeiro celular com conexão a internet o _Nokia 9000 Communicator_
