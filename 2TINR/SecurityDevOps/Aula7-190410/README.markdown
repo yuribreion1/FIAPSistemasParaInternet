@@ -27,6 +27,12 @@ EXPOSE 80
 docker run -d -p 80:80 webserver:v1
 ```
 
+- Para verificar o processo criado:
+
+``` bash
+docker images
+```
+
 - Para acessar o resultado usamos: 
 
 ``` bash
