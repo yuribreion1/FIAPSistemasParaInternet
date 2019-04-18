@@ -24,3 +24,7 @@
 > Aplicar o conceito de _container_ a uma aplicação não é uma solução ideal
 
 Quando temos muitos containers para serem executados. Uma boa solução seria utilizar o [docker compose](https://docs.docker.com/compose/) que permite editar o processo de _deploy_ de forma mais programatica
+
+![docker compose](https://i2.wp.com/foxutech.com/wp-content/uploads/2017/06/Docker-compose-File.png?fit=1000%2C390&ssl=1)
+
+[Questões valendo nota](https://pt.surveymonkey.com/r/YPV973T)
