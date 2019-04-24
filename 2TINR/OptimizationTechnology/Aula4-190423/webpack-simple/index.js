@@ -1,4 +1,3 @@
 // Este require vai trazer a função que foi exportada
-var auxiliar = require('./auxiliar.js');
+var funcoes = require('./auxiliar.js').funcDigaOi("Yuri");
 
-console.log('Aqui onde tudo começa');

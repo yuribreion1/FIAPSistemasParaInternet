@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function digaOi() {\r\n    alert('Diga olá');\r\n}\r\n\r\n// Exportando a função para ser chamada \r\nmodule.exports = digaOi;\n\n//# sourceURL=webpack:///./auxiliar.js?");
+eval("function digaOi(nome) {\r\n    alert(\"Olá \"+ nome + \" !!!\");\r\n}\r\n\r\nfunction digaTchau(nome) {\r\n    alert(\"Tchau \" + nome + \"!!!\");\r\n}\r\n\r\nvar funcoes = {\r\n    funcDigaOi: digaOi,\r\n    funcDigaTchau: digaTchau\r\n}\r\n\r\n// Exportando a função para ser chamada \r\nmodule.exports = funcoes\n\n//# sourceURL=webpack:///./auxiliar.js?");
 
 /***/ }),
 
@@ -104,7 +104,7 @@ eval("function digaOi() {\r\n    alert('Diga olá');\r\n}\r\n\r\n// Exportando a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Este require vai trazer a função que foi exportada\r\nvar auxiliar = __webpack_require__(/*! ./auxiliar.js */ \"./auxiliar.js\");\r\n\r\nconsole.log('Aqui onde tudo começa');\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("// Este require vai trazer a função que foi exportada\r\nvar funcoes = __webpack_require__(/*! ./auxiliar.js */ \"./auxiliar.js\").funcDigaOi(\"Yuri\");\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
